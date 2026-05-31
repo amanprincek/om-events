@@ -32,6 +32,7 @@ const AdminInventory = lazy(() => import('./pages/admin/Inventory'));
 const AdminDispatch = lazy(() => import('./pages/admin/Dispatch'));
 const AdminReturns = lazy(() => import('./pages/admin/Returns'));
 const AdminMaintenance = lazy(() => import('./pages/admin/Maintenance'));
+const AdminStaff = lazy(() => import('./pages/admin/Staff'));
 
 // Lazy load staff pages
 const StaffHome = lazy(() => import('./pages/staff/Home'));
@@ -93,6 +94,7 @@ export default function App() {
               <Route path="dispatch" element={<AdminDispatch />} />
               <Route path="returns" element={<AdminReturns />} />
               <Route path="maintenance" element={<AdminMaintenance />} />
+              <Route path="staff" element={<AdminStaff />} />
             </Route>
 
             {/* Staff Application */}
