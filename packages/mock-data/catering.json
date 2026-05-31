@@ -1,0 +1,39 @@
+{
+  "menus": [
+    {
+      "id": "menu_1",
+      "name": "Royal Wedding Spread (Template)",
+      "isTemplate": true
+    }
+  ],
+  "menuSections": [
+    {
+      "id": "msec_1",
+      "menuId": "menu_1",
+      "name": "Welcome Drinks",
+      "order": 1
+    },
+    {
+      "id": "msec_2",
+      "menuId": "menu_1",
+      "name": "Main Course",
+      "order": 2
+    }
+  ],
+  "menuItems": [
+    {
+      "id": "mi_1",
+      "sectionId": "msec_1",
+      "name": "केसर Pista Milk",
+      "description": "Warm milk with saffron and pistachios.",
+      "dietaryFlags": ["VEG"]
+    },
+    {
+      "id": "mi_2",
+      "sectionId": "msec_2",
+      "name": "Paneer Butter Masala",
+      "description": "Rich tomato gravy with paneer cubes.",
+      "dietaryFlags": ["VEG"]
+    }
+  ]
+}

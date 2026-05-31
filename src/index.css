@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #b5952f;
+  --color-gold-700: #967d28;
+
+  /* Brand Tokens */
+  --color-brand: #d4af37;
+  --color-champagne: #fde68a;
+  
+  /* Surface Tokens */
+  --color-slate-midnight: #020617;
+  --color-slate-obsidian: #0f172a;
+  --color-glass-surface: rgba(15, 23, 42, 0.6);
+  
+  /* Text Tokens */
+  --color-text-primary: #f8fafc;
+  --color-text-muted: #94a3b8;
+  
+  /* Border Tokens */
+  --color-border-glass: rgba(255, 255, 255, 0.08);
+  --color-border-gold: rgba(212, 175, 55, 0.3);
+  
+  /* Trust System Tokens */
+  --color-trust-indicator: rgba(212, 175, 55, 0.6);
+  --color-watermark-strong: rgba(255, 255, 255, 0.04);
+  
+  /* Shadow Tokens */
+  --shadow-glow-gold: 0 8px 32px rgba(212, 175, 55, 0.15);
+  --shadow-glass-depth: 0 24px 48px rgba(0, 0, 0, 0.5);
+  --shadow-trust-anchor: 0 32px 64px rgba(2, 6, 23, 0.8);
+  
+  /* Blur Tokens */
+  --blur-ambient: 12px;
+  --blur-macro: 24px;
+  --blur-trust-shield: 32px;
+  
+  /* Radii Tokens */
+  --radius-sharp: 2px;
+  --radius-pill: 9999px;
+}
+
+@layer utilities {
+  .bg-glass {
+    background-color: var(--color-glass-surface);
+    backdrop-filter: blur(var(--blur-macro));
+  }
+  
+  .border-glass-specular {
+    border-top: 1px solid var(--color-border-glass);
+    border-left: 1px solid var(--color-border-glass);
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .text-overline {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--color-brand);
+  }
+  
+  .font-trust-number {
+    font-family: var(--font-serif);
+    font-weight: 600;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-slate-midnight);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-slate-midnight);
+  color: var(--color-text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}

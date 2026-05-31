@@ -1,0 +1,45 @@
+{
+  "dispatchRecords": [
+    {
+      "id": "dispatch_1",
+      "eventId": "evt_1",
+      "status": "DELIVERED",
+      "dispatchedAt": "2024-11-20T08:00:00Z",
+      "items": [
+        { "inventoryItemId": "item_1", "quantityDispatched": 500 },
+        { "inventoryItemId": "item_2", "quantityDispatched": 60 }
+      ]
+    }
+  ],
+  "returnRecords": [
+    {
+      "id": "return_1",
+      "dispatchRecordId": "dispatch_1",
+      "status": "PENDING",
+      "items": []
+    }
+  ],
+  "damageReports": [
+    {
+      "id": "dmg_1",
+      "returnRecordId": "return_1",
+      "inventoryItemId": "item_1",
+      "quantity": 2,
+      "issueType": "BROKEN",
+      "description": "Leg broken during transport",
+      "resolution": "REPORTED",
+      "assignedTechnician": "John Doe",
+      "reportedAt": "2024-11-21T10:00:00Z"
+    },
+    {
+      "id": "dmg_2",
+      "returnRecordId": "return_1",
+      "inventoryItemId": "item_2",
+      "quantity": 1,
+      "issueType": "CLEANING_REQUIRED",
+      "description": "Stained fabric",
+      "resolution": "IN_REPAIR",
+      "reportedAt": "2024-11-21T11:00:00Z"
+    }
+  ]
+}

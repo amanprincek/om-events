@@ -1,0 +1,42 @@
+{
+  "events": [
+    {
+      "id": "evt_1",
+      "bookingId": "bk_1",
+      "type": "WEDDING",
+      "venueDetails": "Community Hall, Anpara",
+      "locationCoordinates": { "lat": 24.2, "lng": 82.7 },
+      "setupStartDate": "2024-11-20T08:00:00Z",
+      "eventDate": "2024-11-22T19:00:00Z",
+      "teardownEndDate": "2024-11-23T12:00:00Z",
+      "guestCount": 1500,
+      "menuId": "menu_1",
+      "assignedStaffIds": ["staff_3"]
+    },
+    {
+      "id": "evt_2",
+      "bookingId": "bk_2",
+      "type": "RECEPTION",
+      "venueDetails": "Auri Main Ground",
+      "setupStartDate": "2024-12-10T08:00:00Z",
+      "eventDate": "2024-12-11T19:00:00Z",
+      "teardownEndDate": "2024-12-12T10:00:00Z",
+      "guestCount": 800,
+      "assignedStaffIds": []
+    }
+  ],
+  "allocations": [
+    {
+      "id": "alloc_1",
+      "eventId": "evt_1",
+      "inventoryItemId": "item_1",
+      "quantityNeeded": 500
+    },
+    {
+      "id": "alloc_2",
+      "eventId": "evt_1",
+      "inventoryItemId": "item_2",
+      "quantityNeeded": 60
+    }
+  ]
+}

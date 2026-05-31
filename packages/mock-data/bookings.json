@@ -1,0 +1,22 @@
+[
+  {
+    "id": "bk_1",
+    "customerId": "cust_1",
+    "branchId": "branch_1",
+    "eventId": "evt_1",
+    "status": "CONFIRMED",
+    "totalAmount": 550000,
+    "advancePaid": 200000,
+    "createdAt": "2024-02-01T11:00:00Z"
+  },
+  {
+    "id": "bk_2",
+    "customerId": "cust_2",
+    "branchId": "branch_1",
+    "eventId": "evt_2",
+    "status": "DRAFT",
+    "totalAmount": 300000,
+    "advancePaid": 0,
+    "createdAt": "2024-03-05T14:00:00Z"
+  }
+]

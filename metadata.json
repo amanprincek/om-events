@@ -1,0 +1,6 @@
+{
+  "name": "Om Tent House And Caterers",
+  "description": "Premium event execution partner, tent setup, and catering services in Anpara, Sonbhadra.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

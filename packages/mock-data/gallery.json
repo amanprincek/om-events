@@ -1,0 +1,28 @@
+{
+  "albums": [
+    {
+      "id": "album_1",
+      "name": "Grand Wedding at Renusagar",
+      "eventId": "evt_1",
+      "tags": ["Wedding", "Royal", "Night"],
+      "isFeatured": true,
+      "createdAt": "2024-03-25T10:00:00Z"
+    }
+  ],
+  "media": [
+    {
+      "id": "media_1",
+      "albumId": "album_1",
+      "url": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=2000",
+      "type": "PHOTO",
+      "caption": "Night setup with golden lights."
+    },
+    {
+      "id": "media_2",
+      "albumId": "album_1",
+      "url": "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=800",
+      "type": "PHOTO",
+      "caption": "Luxury tent architecture."
+    }
+  ]
+}

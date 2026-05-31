@@ -1,0 +1,26 @@
+[
+  {
+    "id": "staff_1",
+    "branchId": "branch_1",
+    "name": "Pawan Kumar",
+    "phone": "+919452460040",
+    "role": "OWNER",
+    "isActive": true
+  },
+  {
+    "id": "staff_2",
+    "branchId": "branch_1",
+    "name": "Gopal Kumar",
+    "phone": "+919653011551",
+    "role": "OWNER",
+    "isActive": true
+  },
+  {
+    "id": "staff_3",
+    "branchId": "branch_1",
+    "name": "Amit Singh",
+    "phone": "+919800000000",
+    "role": "MANAGER",
+    "isActive": true
+  }
+]

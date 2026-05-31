@@ -1,0 +1,49 @@
+{
+  "categories": [
+    {
+      "id": "cat_tent",
+      "name": "Tent Structure & Fabric",
+      "description": "Standard pipes, royal drapes, waterproof covers."
+    },
+    {
+      "id": "cat_furn",
+      "name": "Furniture",
+      "description": "Chairs, banquet tables, sofas."
+    },
+    {
+      "id": "cat_light",
+      "name": "Lighting",
+      "description": "Chandeliers, halogens, LED pars."
+    }
+  ],
+  "items": [
+    {
+      "id": "item_1",
+      "categoryId": "cat_furn",
+      "branchId": "branch_1",
+      "name": "Premium Gold Chiavari Chair",
+      "totalOwned": 1500,
+      "damagedQuantity": 15,
+      "trackingMethod": "BULK",
+      "imageUrl": "https://images.unsplash.com/photo-1519225421980-715cb0215aed"
+    },
+    {
+      "id": "item_2",
+      "categoryId": "cat_furn",
+      "branchId": "branch_1",
+      "name": "Round Dining Table (8 Seater)",
+      "totalOwned": 200,
+      "damagedQuantity": 2,
+      "trackingMethod": "BULK"
+    },
+    {
+      "id": "item_3",
+      "categoryId": "cat_tent",
+      "branchId": "branch_1",
+      "name": "Waterproof German Tent Setup (100x100)",
+      "totalOwned": 5,
+      "damagedQuantity": 0,
+      "trackingMethod": "SERIALIZED"
+    }
+  ]
+}

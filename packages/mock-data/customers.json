@@ -1,0 +1,17 @@
+[
+  {
+    "id": "cust_1",
+    "name": "Rajesh Sharma",
+    "primaryPhone": "+919988776655",
+    "whatsapp": "+919988776655",
+    "address": "Renusagar Colony, Sonbhadra",
+    "createdAt": "2023-11-10T10:00:00Z"
+  },
+  {
+    "id": "cust_2",
+    "name": "Anjali Verma",
+    "primaryPhone": "+919922334455",
+    "address": "Shaktinagar, Sonbhadra",
+    "createdAt": "2024-01-15T14:30:00Z"
+  }
+]

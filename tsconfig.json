@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@om-tent/core-types": ["./packages/core-types/index.ts"],
+      "@om-tent/mock-data": ["./packages/mock-data/index.ts"],
+      "@om-tent/ui-system": ["./packages/ui-system/index.ts"],
+      "@om-tent/data-access": ["./packages/data-access/index.ts"],
+      "@om-tent/utils": ["./packages/utils/index.ts"]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  }
+}

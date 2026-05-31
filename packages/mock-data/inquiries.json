@@ -1,0 +1,13 @@
+[
+  {
+    "id": "inq_1",
+    "name": "Sunil Gupta",
+    "phone": "+919876543210",
+    "eventType": "RECEPTION",
+    "guestCount": 800,
+    "eventDate": "2024-12-15T00:00:00Z",
+    "notes": "Requested premium setup and crystal lighting.",
+    "createdAt": "2024-03-01T09:30:00Z",
+    "isResolved": false
+  }
+]
