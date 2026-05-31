@@ -10,7 +10,7 @@ export default function Footer() {
             <a href="#home" className="font-serif text-2xl font-bold tracking-wider text-white">
               OM TENT <span className="text-[var(--color-brand)] ml-2">HOUSE</span>
             </a>
-            <p className="text-[var(--color-text-muted)] text-sm mt-3 font-light font-sans max-w-sm">Premium Event Execution Partner serving Anpara & surrounding regions.</p>
+            <p className="text-[var(--color-text-muted)] text-sm mt-3 font-light font-sans max-w-sm">Anpara, Sonbhadra aur aas-paas ke ilakon ka sabse trusted aur premium event deployment partner.</p>
           </div>
 
           <div className="flex flex-wrap justify-center md:justify-end gap-x-10 gap-y-4">

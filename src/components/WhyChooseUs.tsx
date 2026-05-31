@@ -58,82 +58,82 @@ export default function WhyChooseUs() {
   const customerFears: CustomerFear[] = [
     {
       id: "fear_1",
-      question: "Will they show up on time?",
-      fearTitle: "The Empty Venue Stress",
-      fearDesc: "Many local tent vendors struggle with booking over-commitments, leaving hosts panicking with uninstalled steel pipes or missing carpets on the morning of their grand ceremony.",
-      solutionTitle: "Our Pre-Lock Benchmark",
-      solutionDesc: "We enforce an absolute four-hour buffer. Every steel frame is complete, draperies are ironed, and lighting loops are pre-checked 4 hours before your first guest steps in — backed by the Pawan & Gopal Kumar personal guarantee."
+      question: "Kya setup bilkul time par taiyar ho jayega?",
+      fearTitle: "Last-minute ki tension aur khali ground ka darr",
+      fearDesc: "Bohot se local tent vendors ek hi din bohot saari bookings le lete hain, jisse end-moment par unka material ya labor nahi pahunchta aur aap busy day par be-wajah tension lete hain.",
+      solutionTitle: "Hamara Strict 4-Hour Buffer Solid Formula",
+      solutionDesc: "Hum guest aane se bilkul 4 ghante pehle sab kuch clear, ironed drapes aur check-tested lights ke sath ready kar dete hain — yeh Pawan aur Gopal Kumar ka direct personal commitment hai."
     },
     {
       id: "fear_2",
-      question: "Will the setup look clean & premium?",
-      fearTitle: "Rusted Frames & Faded Silks",
-      fearDesc: "Standard market setups often reuse oil-stained rugs, rusted steel panels, or faded, torn yellow draperies that instantly ruin the luxury look in high-definition event photography.",
-      solutionTitle: "Mainstream Elite Sourcing",
-      solutionDesc: "We maintain a pristine, segregated material warehouse in Sonbhadra. Fabric lines are dry-cleaned immediately after every single use. We retire rusted backdrops to ensure every wedding stage reflects royal white and sparkling gold."
+      question: "Kya fabrics aur materials saaf aur naye dikhenge?",
+      fearTitle: "Purane fte-purane kapde aur rusted frames",
+      fearDesc: "Aam market mein log gande, kale pad chuke carpets, rusted steel panels, aur tute unwashed pardey reuse karte hain, jo high-definition wedding photography mein behad kharab aur saste lagte hain.",
+      solutionTitle: "Our Dry-Cleaned Warehouse Sourcing",
+      solutionDesc: "Sonbhadra mein hamara bada independent material warehouse hai. Har ek function ke baad kapde turant dry-clean hote hain aur rusted items ko discard kar diya jata hai taaki aapka stage bilkul royal white aur glittering gold chamke."
     },
     {
       id: "fear_3",
-      question: "Will they walk out or leave work unfinished?",
-      fearTitle: "Peak Season Extortions",
-      fearDesc: "Unprofessional agencies frequently threaten to stop setup in peak winter seasons, demanding extra labor or transport fees that were never transparently itemized.",
-      solutionTitle: "Sovereign Legals & Zero Hidden Keys",
-      solutionDesc: "We provide detailed, legally binding GST estimates during free site visits. Not a single rupee is modified post-agreement. Our logistics crew is directly employed with zero sudden peak-season walkout risk."
+      question: "Kya kaam beech mein chhod kar chale jayenge?",
+      fearTitle: "Peak season ke naye naye extra fees demands",
+      fearDesc: "Local agencies aksar peak wedding dates par extra labor aur hidden rent charges mangne lagti hain aur agar aap mana karein toh chalti shadi mein kaam beech mein chhodne ki dhumki deti hain.",
+      solutionTitle: "Itemized Bill aur Zero Extra Hidden Rates Guarantee",
+      solutionDesc: "Hum free site visit karke legal itemized GST estimations likh ke dete hain. Ek baar baat pakki hone ke baad ek bhi extra rupee nahi manga jata. Aur hamari team direct payroll par hai, isliye koi walkout darr nahi."
     },
     {
       id: "fear_4",
-      question: "Can they handle colossal scales safely?",
-      fearTitle: "Rain Hazards & Structural Failures",
-      fearDesc: "Poorly weighted aluminum frames are prone to collapse under unseasonal wind drafts or heavy monsoon water accumulation, creating severe electrocution or visual hazards.",
-      solutionTitle: "Wind-Insulated German Engineering",
-      solutionDesc: "We drive structural iron anchors four feet deep into raw soil. Our heavy truss setups feature multi-layered waterproof backing lines and armored, rubber-insulated electrical corridors to ensure risk-free hosting."
+      question: "Kya achanak aayi baarish ya hawa se tent gir sakta hai?",
+      fearTitle: "Baarish ki mitti aur lightning safety khatra",
+      fearDesc: "Weak anchors aur uncleaned cables ki wajah se upar jama pani ya tez aandhi se structures collapse ho sakte hain aur electric short-circuit hone ka khatra bohot badh jata hai.",
+      solutionTitle: "Heavy Iron Anchors aur German Engineering Layout",
+      solutionDesc: "Hum lohe ke massive anchors ko 4 feet gehra jameen mein drill karte hain. Hamari aluminum waterproof sheeting ko wind-insulated drapes milte hain, aur poore venue par rubber insulated cables bichaye jate hain taaki sab bilkul safe rahe."
     },
     {
       id: "fear_5",
-      question: "Will they keep their verbal promises?",
-      fearTitle: "The Oral Agreement Amputee",
-      fearDesc: "Proprietors promise 'premium services' verbally during coffee chats, but substitute cheaper secondary substitutes or omit promised decorative accents on the actual event night.",
-      solutionTitle: "Absolute Line-by-Line Fulfillment",
-      solutionDesc: "Our itemized estimates and digital drawings act as exact manifest lists. If a specific floral selection or chandelier counts are specified on your quote, they are delivered, double-checked, and approved by the owner."
+      question: "Kya wo sach mein wahi lagayenge jo vaada kiya hai?",
+      fearTitle: "Verbal commitments par dhokha",
+      fearDesc: "Proprietors coffee chat par 'premium models' ka jhootha vaada karte hain par actual night par saste unbranded chairs ya light-budget decoration lagakar chalte bante hain.",
+      solutionTitle: "Word to Word Detailed Manifest Verification",
+      solutionDesc: "Hamare quotes mein hardware aur fabric counts bilkul likhit hote hain. Jo drawings hum aapko final karke dikhayenge, event night par owners khud check karke use bilkul waisa hi maintain karenge."
     }
   ];
 
   const trustPillars: TrustPillar[] = [
     {
       icon: <CheckCircle2 className="w-6 h-6 text-[var(--color-brand)]" />,
-      title: "We Deliver What We Promise",
-      tagline: "Honest Implementation",
-      description: "Our word is your absolute structural anchor. What you see during planning is exactly what stands fully polished on event day, with zero aesthetic sub-standard deviations."
+      title: "Jo Vaada Karte Hain, Use Nibhate Hain",
+      tagline: "Sacchi Commitment",
+      description: "Hamari baat ek bar final hone ke baad bilkul shila-lekh jaisi majboot ho jati hai. Jo visual aap design maps par dekhenge, wahi dhoom-dham se ground par deliver kiya jayega."
     },
     {
       icon: <Clock className="w-6 h-6 text-[var(--color-brand)]" />,
-      title: "On-Time Setup Guaranteed",
-      tagline: "4-Hour Buffer Security",
-      description: "We work on multi-shift schedules long before your event begins. The complete stage, dining court, and warm ambient light lines are tested and hand-inspected before the groom arrives."
+      title: "Setup Time Par - Aapka Bharosa Hamara Vaada",
+      tagline: "4-Hour Safety Buffer",
+      description: "Hum multi-shift timing par kam karte hain takki groom ke pahunchne se pehle main stage, lounges, lighting aur heavy canopies bilkul ready milen."
     },
     {
       icon: <ShieldCheck className="w-6 h-6 text-[var(--color-brand)]" />,
-      title: "Professional Execution",
-      tagline: "Sovereign Setup Officers",
-      description: "A streamlined on-site deployment team working with direct checklist protocols. We maintain clean, cordoned storage spaces and ensure zero ground layout clutter is visible to your honorable guests."
+      title: "Professional Event Execution",
+      tagline: "Strict Operational Standards",
+      description: "Dressed and uniformed staffs bina kisi shor-sharaabe ke discipline ke sath pure area ko clean rakhte hain taaki mehmaano ke samne ratti bhar ka bhi kachra ya wire kachra na dikhe."
     },
     {
       icon: <Users className="w-6 h-6 text-[var(--color-brand)]" />,
-      title: "Dedicated Event Support",
+      title: "Har Step Par Hamari Team Aapke Saath.",
       tagline: "On-Site Supervisor Presence",
-      description: "An experienced supervisor is stationed permanently next to your coordinators throughout the entire ceremony to manage real-time lighting adjustments or dynamic layout demands immediately."
+      description: "Humare senior coordinators pure event ke waqt aapke family coordinators ke sath touch me rahenge taaki electrical load ya layout adjustment instantly handle ho sake."
     },
     {
       icon: <Award className="w-6 h-6 text-[var(--color-brand)]" />,
-      title: "Experienced Team",
-      tagline: "7+ Years Elite Heritage",
-      description: "Under the direct command of Pawan and Gopal Kumar, our seasoned crew has successfully orchestrated over 500 landmark marriages, corporate events, and religious stages in Sonbhadra’s key venues."
+      title: "Experienced Direct Leadership",
+      tagline: "7+ Years Trusted Legacy",
+      description: "Pawan aur Gopal Kumar ke direct supervision me humne Sonbhadra aur aas-paas ke areas me 500+ successful functions behtareen tareeqe se poore kiye hain."
     },
     {
       icon: <Workflow className="w-6 h-6 text-[var(--color-brand)]" />,
       title: "Transparent Communication",
-      tagline: "GST itemized invoices",
-      description: "No vague bundled quotes. You receive clear pricing outlining structural tent sizes, exact floral counts, catering dishes, and electrical backup details, ensuring total billing transparency."
+      tagline: "Itemized GST Estimation",
+      description: "Zero oral confusion. Har ek single light, carpet aur food item bilkul clean aur likhit bill me hoga taaki aapka budget crystal clear rahe."
     }
   ];
 
@@ -141,32 +141,32 @@ export default function WhyChooseUs() {
     {
       title: "Planning stage",
       category: "planning",
-      competitor: "Vague oral agreements written on raw paper files. No itemized item checklists, layout planning, or ground safety assessments in advance.",
-      omTent: "Thorough digital catalog selection, clear site visits, and detailed line-by-item structural estimates outlining exact counts of drapes, lights, and layout structures."
+      competitor: "Kachhe kaagaz par hath se likhe bina itemization wale vague estimates. Event se pehle site-visit ya safety load checking ka koi plan nahi hota.",
+      omTent: "Thorough digital catalog selection, accurate site visits, aur detailed item-by-item structural bill jo har drashtikon se transparent hota hai."
     },
     {
       title: "Execution quality",
       category: "execution",
-      competitor: "Untrained casual labor using rusted stage pillars, stained rugs, and un-ironed curtains that look worn out in high-resolution zoom cameras.",
-      omTent: "Directly employed, uniformed assembly crew. Every rug is deep-sanitized, silks are hand-steamed, and heavy trusses undergo strict weight alignment checks before dressing."
+      competitor: "Untrained labor aur purane rusted pillars, fte gande carpets, aur un-ironed curtains jo photography me behad dulle aur saste lagte hain.",
+      omTent: "Professional assembly crew jo uniform me rehte hain. Sanitize carpets, steaming silks, aur heavy trusses ki safety checks dress-up se pehle achhe se ki jati hai."
     },
     {
       title: "Reliability & Timeline",
       category: "reliability",
-      competitor: "High dependency on third-party inventory. Risk of delayed completion or sudden cancellations in wedding season due to material shortages.",
-      omTent: "Indestructible 100% on-time record since 2019. We own a continuous luxury inventory stream capable of setting up 3 colossal, premium-grade simultaneous venues without dry-out."
+      competitor: "Dusre vendors ke material par heavy dependency. Shaadi season me material ki kami ki wajah se achanak cancellations ya bohot late work delivery.",
+      omTent: "2019 se abhi tak 100% on-time record! Hamare paas itna bada luxury inventory stream hai ki hum ek sath 3 colossal, premium wedding venues bina kisi shortage ke manage kar sakte hain."
     },
     {
       title: "Communication flow",
       category: "communication",
-      competitor: "Owners become unreachable on phone calls during busy days. Unforeseen 'handling charges' or transit fees added at the end of the night.",
-      omTent: "A dedicated logistical coordinator is assigned to you. Every single rupee is itemized upfront; we absorb all unforeseen local transit risks under our initial pledge."
+      competitor: "Busy season me owners phone nahi uthate. Aur event wali raat ko achanak 'transport charge' ya 'extra labor fees' bolkar dhumki di jati hai.",
+      omTent: "Aapke liye ek personal logistical coordinator hamesha live rehta hai. Rate bilkul fixed aur transparent hote hain, aur sabhi transit risk hum apne initial quote me hi handle karte hain."
     },
     {
       title: "Direct accountability",
       category: "accountability",
-      competitor: "Blameshifting to subcontractors for structural faults, broken chairs, cold food catering, or delayed light configurations.",
-      omTent: "All operations are directly supervised by owners Pawan and Gopal Kumar. Direct mobile accessibility and instant executive resolution for peace of mind."
+      competitor: "Sofa tute hone par, generator jalne par ya cold catering milne par subcontractors aur local vendors ke beech blame-game shuru ho jata hai.",
+      omTent: "Har event ko Pawan aur Gopal Kumar direct lead aur monitor karte hain. Direct mobile contact aur instantly executive resolution se aap befikar rehte hain."
     }
   ];
 
@@ -187,11 +187,11 @@ export default function WhyChooseUs() {
               THE ULTIMATE SAFE HAVEN
             </span>
             <Heading level={2} className="text-4xl md:text-6xl tracking-wide font-light mb-6">
-              Why Elite Hosts <br/>
-              <span className="font-serif text-[var(--color-brand)] italic">Trust Our Word.</span>
+              Elite Families Humare <br/>
+              <span className="font-serif text-[var(--color-brand)] italic">Zubaan Par Bharosa Karte Hain.</span>
             </Heading>
             <p className="text-[var(--color-text-muted)] font-sans font-light leading-relaxed max-w-2xl mx-auto text-base md:text-lg">
-              Choosing an event partner isn't just about selecting structures; it is about choosing peace of mind. We have spent over seven years systematically eliminating the risks and chaotic standard practices of the local wedding market.
+              Event partner chunna sirf structures lagana nahi hai, balki apne parivaar ke sabse bade din par sukoon chunna hai. Humne pichle sat saalon mein local event market ke saare risk aur problems ko systematically door kiya hai taaki aap be-fikar rahein.
             </p>
           </div>
         </Container>
@@ -201,12 +201,12 @@ export default function WhyChooseUs() {
       <Section className="py-20 md:py-28 relative z-10">
         <Container>
           <div className="text-center mb-16">
-            <span className="text-overline mb-3 block tracking-widest text-rose-400">COMMON EVENT ANXIETIES</span>
+            <span className="text-overline mb-3 block tracking-widest text-rose-400">AAJ KI SABSE BADI ANXIETIES</span>
             <Heading level={3} className="text-2xl md:text-4xl leading-tight font-light text-white">
-              Addressing Your <span className="font-serif text-[var(--color-brand)] italic">Deepest Concerns</span> Elegantly
+              Aapki Har <span className="font-serif text-[var(--color-brand)] italic">Chinta Aur Darr Ka</span> Behtareen Solution
             </Heading>
             <p className="text-[var(--color-text-muted)] font-sans font-light text-sm md:text-base max-w-xl mx-auto mt-3">
-              We understand the pressure you face as event hosts. Here is how our operational model transforms standard market fears into absolute, certified certainties.
+              Hum jaante hain ki ek host ke taur par aap par kitna bada pressure hota hai. Dekhiye kaise humara operational system market ke har darr ko pakke aur safe bharose mein badalta hai.
             </p>
           </div>
 
@@ -315,10 +315,10 @@ export default function WhyChooseUs() {
           <div className="max-w-3xl mx-auto text-center mb-20">
             <span className="text-overline mb-3 block tracking-widest text-[var(--color-brand)]">OPERATIONAL CERTAINTIES</span>
             <Heading level={2} className="text-3xl md:text-5xl leading-tight font-light text-white">
-              The Six Pillars Of <span className="font-serif text-[var(--color-brand)] italic">Sovereign Service.</span>
+              Sovereign Service Ke <span className="font-serif text-[var(--color-brand)] italic">6 Bemisaal Pillars.</span>
             </Heading>
             <p className="text-[var(--color-text-muted)] font-light text-sm md:text-base max-w-xl mx-auto mt-4">
-              We run weddings based on precision coordination protocols and absolute billing integrity. Here are our six standard rules of conduct.
+              Hum weddings aur grand events ko poore system aur written rules ke sath chalate hain. Yeh hain humare kaam karne ke 6 sunehre asool jin par hum kabhi samjhauta nahi karte.
             </p>
           </div>
 
@@ -367,10 +367,10 @@ export default function WhyChooseUs() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <span className="text-overline mb-3 block tracking-widest text-[var(--color-brand)]">OBJECTIVE COMPARATIVE STUDY</span>
             <Heading level={2} className="text-3xl md:text-5xl leading-tight font-light text-white">
-              The Operational <span className="font-serif text-[var(--color-brand)] italic">Contrast.</span>
+              Kaam Ka Tareeqa: <span className="font-serif text-[var(--color-brand)] italic">Hamara Aur Dusron Ka Farq.</span>
             </Heading>
             <p className="text-[var(--color-text-muted)] font-light text-sm md:text-base max-w-xl mx-auto mt-4">
-              Events require massive micro-coordination. Discover how our systemized process compares to typical unorganized vendor methods in the region without attacking our local peers.
+              Har event mein hazaron details ka dhyan rakhna hota hai. Dekhiye kaise humara professional process kisi aam local vendor ke kaam se behtar aur safe hai, taaki aap bina chinta ke khushiyan mana sakein.
             </p>
           </div>
 
@@ -407,11 +407,11 @@ export default function WhyChooseUs() {
                   <div>
                     <div className="flex items-center gap-2 text-[var(--color-text-muted)] font-mono text-[10px] uppercase tracking-widest mb-4">
                       <span className="w-1.5 h-1.5 rounded-full bg-slate-500"></span>
-                      TYPICAL LOCAL EVENT approach
+                      AAM LOCAL TENT APPROACH
                     </div>
                     
                     <h4 className="font-serif text-xl text-slate-400 font-medium mb-4 capitalize">
-                      Standard {currentComparison.category} practices
+                      Aam Vendor Ka {currentComparison.category} Tarika
                     </h4>
                     
                     <p className="text-slate-400/90 font-sans font-light text-sm md:text-base leading-relaxed">
@@ -420,7 +420,7 @@ export default function WhyChooseUs() {
                   </div>
 
                   <div className="mt-8 pt-4 border-t border-[var(--color-border-glass)]/40 text-[10px] font-mono text-[#94a3b8]/60 uppercase tracking-wider">
-                    Risk Profile: Highly Fragile State
+                    Risk Profile: Bohot Kachha aur Unsafe
                   </div>
                 </div>
 
@@ -438,7 +438,7 @@ export default function WhyChooseUs() {
                     </div>
                     
                     <h4 className="font-serif text-xl text-white font-semibold mb-4 capitalize">
-                      Our {currentComparison.category} solutions
+                      Humare Shandaar {currentComparison.category} Solutions
                     </h4>
                     
                     <p className="text-[var(--color-text-primary)] font-sans font-light text-sm md:text-base leading-relaxed">
@@ -447,7 +447,7 @@ export default function WhyChooseUs() {
                   </div>
 
                   <div className="mt-8 pt-4 border-t border-[var(--color-border-glass)] text-[10px] font-mono text-[var(--color-brand)] uppercase tracking-wider font-semibold">
-                    Safety Status: Certified Integrity Buffer
+                    Safety Status: 100% Certified Safe & Secure
                   </div>
                 </div>
               </motion.div>
@@ -462,7 +462,7 @@ export default function WhyChooseUs() {
           <div className="text-center mb-16">
             <span className="text-overline mb-3 block tracking-widest text-[var(--color-brand)]">OPERATIONAL AUDIT</span>
             <Heading level={3} className="text-2xl md:text-3xl font-light text-white font-serif">
-              Our Track Record <span className="font-serif text-[var(--color-brand)] italic">In Raw Numbers.</span>
+              Humara Track Record <span className="font-serif text-[var(--color-brand)] italic">Sache Numbers Mein.</span>
             </Heading>
           </div>
 
@@ -474,10 +474,10 @@ export default function WhyChooseUs() {
                 <AnimatedCounter value={7} suffix="+" />
               </div>
               <div className="text-[10px] font-mono text-[var(--color-text-muted)] uppercase tracking-wider">
-                Years of Heritage
+                Sat Saalon Ka Heritage
               </div>
               <p className="text-[11px] text-[var(--color-text-muted)] mt-1.5 font-light leading-normal">
-                Serving VIP hosts in Sonbhadra/Anpara area.
+                Sonbhadra, Anpara aur aas-paas ke VIP parivaaron ki seva mein.
               </p>
             </div>
 
@@ -487,10 +487,10 @@ export default function WhyChooseUs() {
                 <AnimatedCounter value={2500} suffix="+" />
               </div>
               <div className="text-[10px] font-mono text-[var(--color-text-muted)] uppercase tracking-wider">
-                Max Guest Capacity
+                Sabse Badi Guest Capacity
               </div>
               <p className="text-[11px] text-[var(--color-text-muted)] mt-1.5 font-light leading-normal">
-                Structuring colossal stable pavilion zones.
+                Kisi bhi bade scale par completely safe pavilion designs.
               </p>
             </div>
 
@@ -500,10 +500,10 @@ export default function WhyChooseUs() {
                 <AnimatedCounter value={3} suffix="" />
               </div>
               <div className="text-[10px] font-mono text-[var(--color-text-muted)] uppercase tracking-wider">
-                Simultaneous Setups
+                Ek Sath Setups
               </div>
               <p className="text-[11px] text-[var(--color-text-muted)] mt-1.5 font-light leading-normal">
-                With independent logistics and material sets.
+                Independent logistics aur badhiya professional material sets ke sath.
               </p>
             </div>
 
@@ -513,10 +513,10 @@ export default function WhyChooseUs() {
                 <AnimatedCounter value={30} suffix="+" />
               </div>
               <div className="text-[10px] font-mono text-[var(--color-text-muted)] uppercase tracking-wider">
-                Event Professionals
+                Experienced Event Experts
               </div>
               <p className="text-[11px] text-[var(--color-text-muted)] mt-1.5 font-light leading-normal">
-                Directly employed, trained alignment engineers.
+                Humare direct payroll par trained professional and alignment staff.
               </p>
             </div>
 
@@ -526,10 +526,10 @@ export default function WhyChooseUs() {
                 <AnimatedCounter value={500} suffix="+" />
               </div>
               <div className="text-[10px] font-mono text-[var(--color-text-muted)] uppercase tracking-wider">
-                Successful bookings
+                Successful Bookings
               </div>
               <p className="text-[11px] text-[var(--color-text-muted)] mt-1.5 font-light leading-normal">
-                Executed perfectly with 100% on-time feedback.
+                Har event time par, zero lag aur flawless execution ke sath.
               </p>
             </div>
 
@@ -555,18 +555,18 @@ export default function WhyChooseUs() {
             </span>
 
             <Heading level={3} className="text-2xl md:text-4xl text-white mb-6 font-serif">
-              Our Sovereign <span className="font-serif italic text-[var(--color-brand)]">Family Promise.</span>
+              Humari Zubaan, <span className="font-serif italic text-[var(--color-brand)]">Hamara Sakht Parivaarik Vaada.</span>
             </Heading>
 
             <blockquote className="space-y-6 relative z-10 text-[var(--color-text-muted)] font-serif italic text-base md:text-lg lg:text-xl font-light leading-relaxed">
               <p>
-                "When you book our setup family for your sister's wedding or your child's milestones, you are not merely signing an agreement. You are vesting your family’s community prestige onto our shoulders."
+                "Jab aap apni behan ki shaadi ya apne parivaar ke kisi khas din ke liye humein chunte hain, toh woh sirf ek standard agreement nahi hota. Aap apne parivaar ka samman aur local prestige humare kandhon par rkh rahe hote hain."
               </p>
               <p>
-                "We realize that in the wedding industry, there are no rehearsal retakes. If a curtain collapses or kitchen light circuits short out, the evening is ruined forever. That is why we personally oversee every alignment milestone. If a task requires extra labor or complex canvas adjustments under torrential winds, we stand on-site until the visual is flawless."
+                "Hum achhe se jaante hain ki shaadi-byah jaise moko par koi 'rehearsal retake' nahi milta. Agar ek parda gir gya ya kitchen ki lights short ho gayi, toh mehmaano ke samne poora event kharab ho jata hai. Isiliye hum khud ek-ek detail par nazar rakhte hain. Agar severe aandhi-toofan ke beech extra labor ya canvas security ki zarurat pade, toh jab tak setup flawless na ho jaye hum khud venue par dates par datte rehte hain."
               </p>
               <p>
-                "We operate based on three fundamental anchor vectors: <strong className="text-white font-medium font-sans">Trust</strong>, <strong className="text-white font-medium font-sans">Responsibility</strong>, and <strong className="text-white font-medium font-sans">keeping our direct word</strong>. We do not desert our patrons, and we do not compromise."
+                "Hamara poora kaam teen asoolon par chalta hai: <strong className="text-white font-medium font-sans">Trust (Bharosa)</strong>, <strong className="text-white font-medium font-sans">Responsibility (Zimmewari)</strong>, aur <strong className="text-white font-medium font-sans">Hamari Pakki Zubaan</strong>. Hum apne clients ko kabhi akela nahi chhodte, aur quality par compromise toh bilkul nahi karte."
               </p>
             </blockquote>
 

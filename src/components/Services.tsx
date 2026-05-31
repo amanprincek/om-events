@@ -5,36 +5,36 @@ export default function Services() {
   const services = [
     {
       title: "Grand Tent Setup",
-      description: "Premium, weather-resistant structural tenting with royal draping, carpeting, and staging for events of all scales.",
+      description: "Premium high-quality waterproof tents aur royal drapes jo shaadiyon aur bade programs ko har mausam mein safe aur khoobsurat banate hain.",
       icon: <Tent className="w-8 h-8 text-[var(--color-brand)]" />,
       image: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=800"
     },
     {
       title: "Royal Catering",
-      description: "Exquisite culinary experiences. From traditional regional delicacies to modern multi-cuisine spreads with impeccable service.",
+      description: "Shandaar khana aur premium swaad. Traditional khane se lekar modern multi-cuisine items tak, hum sab behtareen safai aur service se deliver karte hain.",
       icon: <Utensils className="w-8 h-8 text-[var(--color-brand)]" />,
       image: "https://images.unsplash.com/photo-1555507036-ab1e4006aa06?auto=format&fit=crop&q=80&w=800"
     },
     {
       title: "Thematic Decoration",
-      description: "Bespoke floral arrangements, entrance gates, stage backgrounds, and table centerpieces tailored to your vision.",
+      description: "Behtareen phoolon ka kaam, entrance gates design, stage backgrounds aur table decoration jo aapke event ko bilkul royal look denge.",
       icon: <Sparkles className="w-8 h-8 text-[var(--color-brand)]" />,
       image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=800"
     },
     {
       title: "Premium Lighting",
-      description: "Ambient, architectural, and dynamic stage lighting that transforms ordinary locations into magical venues.",
+      description: "Sundar ambient lights aur digital stage lighting setups jo simple ground ko bhi ek bilkul jadui aur royal venue bana dengi.",
       icon: <Lamp className="w-8 h-8 text-[var(--color-brand)]" />,
       image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800"
     }
   ];
 
   const categories = [
-    "Weddings & Receptions",
-    "Corporate Events",
-    "Religious Functions",
-    "Birthday Celebrations",
-    "School Functions",
+    "Shaadi & Receptions",
+    "Corporate Programs",
+    "Parivaarik Pooja & Functions",
+    "Birthdays & Anniversaries",
+    "School Functions & Fests",
   ];
 
   return (
@@ -42,9 +42,9 @@ export default function Services() {
       <Container>
         <div className="text-center mb-20">
           <span className="text-overline mb-4 block">What We Offer</span>
-          <Heading level={2} className="mb-6">Masterpieces in Infrastructure</Heading>
+          <Heading level={2} className="mb-6">Bade Events Ke Expert Setups</Heading>
           <p className="text-[var(--color-text-muted)] max-w-2xl mx-auto font-light text-lg">
-            We provide comprehensive end-to-end event infrastructure, ensuring complete synergy between setup, aesthetics, and hospitality.
+            Hum event ka har chota-bada setup khud sambhalte hain taaki tenting, decoration aur catering ka pura alignment ekdam royal aur smooth rahe.
           </p>
         </div>
 

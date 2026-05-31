@@ -61,24 +61,24 @@ export default function TrustTestimonials() {
             className="mb-24 text-center max-w-4xl mx-auto"
           >
             <span className="text-overline mb-4 block tracking-[0.25em] text-[var(--color-brand)]">
-              Our Sovereign Oath
+              Hamara Sakht Vaada
             </span>
             
             {/* Elegant luxury quote block */}
             <div className="relative p-12 md:p-16 rounded-[var(--radius-sharp)] bg-[var(--color-slate-midnight)]/40 border border-[var(--color-border-glass)] shadow-[var(--shadow-glass-depth)]">
               <span className="absolute top-4 left-6 text-7xl font-serif text-[var(--color-brand)]/15 select-none leading-none">“</span>
               <Heading level={2} className="relative z-10 text-3xl md:text-5xl lg:text-6xl !leading-[1.2] tracking-wide font-light mb-6">
-                We Deliver <span className="font-serif text-[var(--color-brand)] italic">What We Promise.</span>
+                Jo Vaada Karte Hain, <span className="font-serif text-[var(--color-brand)] italic">Use Nibhate Hain.</span>
               </Heading>
               
               <p className="text-[var(--color-text-muted)] text-base md:text-lg font-sans font-light max-w-2xl mx-auto leading-relaxed">
-                In an industry fractured by sudden cancellations, poor equipment, and unnoted fees, Om Tent House stands as a bastion of iron-clad reliability. Since 2019, under the direct stewardship of Pawan Kumar and Gopal Kumar, we have never abandoned an event. Not once.
+                Sudden cancellations, kharab materials aur bin-bataye achanak badhne wali fees se pareshan log jab humare pas aate hain, toh unhe asli sukoon milta hai. 2019 se abhi tak Pawan aur Gopal Kumar ke direct leadership ke under, humne ek bhi event beech mein nahi choda hai. Ek baar bhi nahi.
               </p>
               
               <div className="mt-8 flex items-center justify-center gap-4">
                 <div className="h-[1px] w-12 bg-[var(--color-border-glass)]"></div>
                 <span className="text-overline tracking-wider text-[var(--color-brand)]">
-                  The Pawan & Gopal Kumar Guarantee
+                  Pawan aur Gopal Kumar Ka Saccha Guarantee
                 </span>
                 <div className="h-[1px] w-12 bg-[var(--color-border-glass)]"></div>
               </div>
@@ -99,7 +99,7 @@ export default function TrustTestimonials() {
                 <AnimatedCounter value={7} suffix="+" />
               </div>
               <div className="text-overline text-[var(--color-text-primary)] text-xs tracking-widest font-mono">
-                Years Experience
+                Saalon Ka Bharosa
               </div>
             </motion.div>
 
@@ -129,7 +129,7 @@ export default function TrustTestimonials() {
                 <AnimatedCounter value={3} suffix="" />
               </div>
               <div className="text-overline text-[var(--color-text-primary)] text-xs tracking-widest font-mono">
-                Simultaneous Events
+                Ek Sath Setups
               </div>
             </motion.div>
 
@@ -144,7 +144,7 @@ export default function TrustTestimonials() {
                 <AnimatedCounter value={30} suffix="" />
               </div>
               <div className="text-overline text-[var(--color-text-primary)] text-xs tracking-widest font-mono">
-                Expert Staff
+                Trained Crew
               </div>
             </motion.div>
 
@@ -179,12 +179,12 @@ export default function TrustTestimonials() {
             <div className="lg:col-span-5">
               <span className="text-overline mb-4 block tracking-widest text-[var(--color-brand)]">Patron Appraisals</span>
               <Heading level={2} className="mb-6 text-4xl md:text-5xl">
-                Voices of Trust <br/>
-                <span className="font-light italic text-[var(--color-brand)]">And Grace.</span>
+                Apno Ke Sacche <br/>
+                <span className="font-light italic text-[var(--color-brand)]">Aur Meethe Shabd.</span>
               </Heading>
               
               <p className="text-[var(--color-text-muted)] font-sans font-light leading-relaxed mb-8 max-w-md">
-                Our operations thrive because we build local relations that last long after the canopies are dismantled. Explore verified reviews from Anpara, Renusagar, Shaktinagar, and surrounding wedding venues.
+                Hum sirf tent lagane ka dhandha nahi karte, balki parivaarik rishte banate hain jo event ke baad bhi hamesha kayam rehte hain. Dekhiye Anpara, Renusagar aur Shaktinagar ke parivaaron ke verified reviews.
               </p>
 
               {/* Interaction List triggers */}
@@ -293,10 +293,10 @@ export default function TrustTestimonials() {
         
         <Container className="relative z-10">
           <div className="text-center mb-16">
-            <span className="text-overline mb-4 block tracking-widest text-[var(--color-brand)]">Behind Strategic Excellence</span>
+            <span className="text-overline mb-4 block tracking-widest text-[var(--color-brand)]">Zimmewari Ki Kahaaniyan</span>
             <Heading level={2} className="mb-6">Case Chronicles & Success Stories</Heading>
             <p className="text-[var(--color-text-muted)] max-w-2xl mx-auto font-light text-base md:text-lg">
-              Explore how our rigorous planning resolved critical location, weather, or crowd concerns in key events around Sonbhadra.
+              Dekhiye kaise hamari team ne barish, location problems ya crowd challenges ko solid planning aur engineering se overcome kiya.
             </p>
           </div>
 
@@ -362,7 +362,7 @@ export default function TrustTestimonials() {
                   <div>
                     <div className="flex items-center gap-3 text-[var(--color-brand)] font-mono text-xs uppercase tracking-widest mb-2 font-medium">
                       <span className="w-2 h-2 rounded-full bg-[var(--color-brand)]"></span>
-                      Our Strategic Solution
+                      Our Strategic Solution (Hamara Solution)
                     </div>
                     <p className="text-white font-sans font-light text-sm md:text-base leading-relaxed">
                       {selectedStory.solution}
@@ -373,7 +373,7 @@ export default function TrustTestimonials() {
                   <div>
                     <div className="flex items-center gap-3 text-emerald-400 font-mono text-xs uppercase tracking-widest mb-2 font-medium">
                       <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-                      The Outcome & Result
+                      The Outcome & Result (Nateeja)
                     </div>
                     <p className="text-[var(--color-text-muted)] font-sans font-light text-sm md:text-base leading-relaxed">
                       {selectedStory.outcome}
@@ -383,7 +383,7 @@ export default function TrustTestimonials() {
 
                 {/* Overlying Client Quote block */}
                 <div className="mt-8 pt-8 border-t border-[var(--color-border-glass)]">
-                  <p className="text-xs uppercase tracking-widest text-[var(--color-brand)] font-mono mb-2">Host Feedback</p>
+                  <p className="text-xs uppercase tracking-widest text-[var(--color-brand)] font-mono mb-2">Parivaar Ka Feedback</p>
                   <p className="text-sm italic text-[var(--color-text-primary)] font-serif font-light">
                     "{selectedStory.clientQuote}"
                   </p>
@@ -417,7 +417,7 @@ export default function TrustTestimonials() {
                 ))}
               </div>
               <span className="text-xs font-mono text-[var(--color-text-muted)] border-l border-[var(--color-border-glass)] pl-4">
-                Google Verified Score
+                Google Verified Reviews
               </span>
             </div>
           </div>
@@ -475,8 +475,8 @@ export default function TrustTestimonials() {
         <Container>
           
           <div className="text-center mb-12">
-            <span className="text-overline mb-4 block tracking-[0.2em] text-[var(--color-brand)]">Core Operational Pillars</span>
-            <Heading level={3} className="text-2xl md:text-3xl text-white font-serif font-light">Why Sonbhadra’s Elite Hosts Trust Us</Heading>
+            <span className="text-overline mb-4 block tracking-[0.2em] text-[var(--color-brand)]">Humare 5 Core Pillars</span>
+            <Heading level={3} className="text-2xl md:text-3xl text-white font-serif font-light">Sonbhadra Ke Elite Parivaar Hum par Kyun Bharosa Karte Hain</Heading>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6">

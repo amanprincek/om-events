@@ -7,7 +7,7 @@ export const testimonials: Testimonial[] = [
     eventType: "Royal Wedding",
     location: "Shaktinagar",
     rating: 5,
-    review: "In Sonbhadra, finding a reliable partner who does not desert you last minute is rare. Pawan and his team delivered a setup on-time that exceeded our expectations. The majestic gold drapery and robust waterproof luxury tents saved our evening despite unanticipated rain showers.",
+    review: "Sonbhadra mein ek aisa trustworthy partner milna jo last-minute par dhokha na de, bohot mushkil hai. Pawan aur unki team ne bilkul time par kaam poora kiya aur apna vaada nibhaya. Unke heavy gold drapes aur waterproof structures ne hume achanak aayi baarish mein bacha liya.",
     eventPhoto: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=800"
   },
   {
@@ -16,7 +16,7 @@ export const testimonials: Testimonial[] = [
     eventType: "Grand Reception",
     location: "Anpara",
     rating: 5,
-    review: "The catering team served 1,800 guests with absolute professionalism. The traditional Avadhi spreads and live sweet counters were the talk of the town! Truly a stress-free experience for a host. From the layout draft to execution, everything was transparently coordinated.",
+    review: "Humare 1,800 guests ko catering team ne bohot hi premium tareeqe se serve kiya. Traditional Avadhi khana aur live sweet counters ki sabne bohot tareef ki. Hum bilkul tension-free the. Layout se lekar execution tak sab transparent tha.",
     eventPhoto: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=800"
   },
   {
@@ -25,7 +25,7 @@ export const testimonials: Testimonial[] = [
     eventType: "Thematic Wedding Setup",
     location: "Renusagar",
     rating: 5,
-    review: "Faced with an extremely tight custom backdrop layout requirement, Om Tent House executed custom ceiling lights and pristine white stage upholstery. Absolute trust anchors. Standard of materials used is premium luxury; no rusted poles or torn canopies.",
+    review: "Bohot hi kam time bacha tha par Om Tent House ne mere custom layout aur pristine white stage setup ko flawless tarike se taiyar kiya. Bilkul sacche aur bharosemand log hain. Materials aur sofa carpets ki quality ekdam nayi aur chamakdar thi, koi rusted poles nahi the.",
     eventPhoto: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=800"
   },
   {
@@ -34,7 +34,7 @@ export const testimonials: Testimonial[] = [
     eventType: "Milestone Birthday",
     location: "Sonbhadra Main",
     rating: 5,
-    review: "They customized a gorgeous modern glass-like lighting setup for our outdoors patio theme. Everything was perfect, and they stayed on-site for emergency support throughout. Highly recommend!",
+    review: "Unhone humare outdoor birthday event ke liye ek shaandar glass-like lighting framework setup kiya. Har cheez perfect thi aur unki team emergency support ke liye pure event ke waqt wahin available thi. 100% recommended!",
     eventPhoto: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&q=80&w=800"
   }
 ];
@@ -45,10 +45,10 @@ export const successStories: SuccessStory[] = [
     title: "The Regal Royal Pavilion Marriage",
     category: "Wedding",
     location: "Shaktinagar Ground",
-    challenge: "Organizing a grand traditional wedding for 2,200 guests with customized royal gold draping, requiring 48-hour turn-around during peak monsoon-threat season in Sonbhadra district, where standard materials often yield water ingress.",
-    solution: "Deployed structural military-grade waterproof inner-linings, dynamic slope-designed tents, and an elevated wooden-carpeted high-platform so that no waterlogged soil could affect the guests. Mobilized a dedicated 24-person team.",
-    outcome: "A perfectly dry, breath-taking golden-hued palace setting that stayed completely insulated from external winter-monsoon winds. Not a single delayed item.",
-    clientQuote: "Every promise made during consultation was executed with flawless precision.",
+    challenge: "Peak monsoon season mein Shaktinagar ke gile lawn par 2,200 guests ke liye royal gold draping wala ek grand wedding set khada karna, jahan ordinary tents mein paani bharne ka bada darr tha.",
+    solution: "Hamari team ne elevated wooden carpet platforms taiyar kiye aur multi-layered waterproof inner canopy layout diya. 24 experts ne din-raat ek karke setup ko mitti aur paani se bilkul protected banaya.",
+    outcome: "Ek behad khoobsurat, dry aur warm golden palace taiyar hua jo winter-monsoon ki tez hawaon ke beech bhi khada raha. Ek bhi second ka delay nahi hua.",
+    clientQuote: "Jo vaada unhone humse meeting mein kiya tha, use poori tarah se nibhaya.",
     image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=800"
   },
   {
@@ -56,10 +56,10 @@ export const successStories: SuccessStory[] = [
     title: "The 1500-Plate Culinary Reception",
     category: "Reception",
     location: "Anpara Club Hall",
-    challenge: "Providing premium traditional and multi-cuisine catering for 1,500 guests with immediate service, requiring active hot-holding kitchens without interrupting the visual aesthetics of the main premium reception stage.",
-    solution: "Designed a twin-partition layout with secondary server tunnels and insulated modular catering kitchens out of sight. Served 8 signature regional sweets using fresh high-ingredient ghee cooked under Gopal Kumar's direct supervision.",
-    outcome: "Flawless dining queue management. Hot, sumptuous food served directly. Universal acclaim from senior members for taste and hygiene.",
-    clientQuote: "Our guests are still calling us to compliment the Shahi Paneer and hot Jalebi counters!",
+    challenge: "1,500 guests ke reception ke liye immediate active food service maintain karna, bina main stage ke royal visual look ko disturb kiya ya kitchen ka dhuan andar aane diye.",
+    solution: "Humne separate silent server galleries aur concealed staging kitchens banaye. Gopal Kumar ke supervision mein shuddh desi ghee se bane banquets aur 8 traditional sweets deliver kiye gaye.",
+    outcome: "Catering queues bilkul smooth rahi aur garam-garam, lazeez khana direct tables tak pahucha. Cleanliness aur taste ke liye sabne Gopal ji ki team ko bohot saraha.",
+    clientQuote: "Humare rishtedaar aaj bhi Shahi Paneer aur garma-garam desi ghee ki Jalebi ke swad ko yaad karte hain!",
     image: "https://images.unsplash.com/photo-1555507036-ab1e4006aa06?auto=format&fit=crop&q=80&w=800"
   },
   {
@@ -67,10 +67,10 @@ export const successStories: SuccessStory[] = [
     title: "Regional Academy Cultural Day",
     category: "School Function",
     location: "Auri Senior Secondary School",
-    challenge: "Providing complex dynamic stage lighting, multi-point sound checks, and 2,000 attendee seating arrangement for kids' presentations, with strict safety-compliance regulations regarding heavy trusses and electrical wiring.",
-    solution: "Built a ground-anchored heavy truss system disguised with velvet borders. Wrapped all electrical runs in high-density rubber conduits. Provided multi-tiered safe elevated staging for safe entry-exit points of performers.",
-    outcome: "An incredibly energetic performance stage with perfect sound level distributions, completed with zero safety hazards during 6 hours of continuous student acts.",
-    clientQuote: "The school board was exceptionally relieved by the proactive safety measures.",
+    challenge: "2,000 students aur parents ke school event ke liye dynamic audio-visual aur seating deploy karna, jahan heavy aluminum wires aur live electric loops ko lekar kadi safety guidelines thi.",
+    solution: "Structural aluminum truss ko safety boundary se lock kiya gaya. Har power line ko heavy rubber conduits mein pack kiya gaya taaki bachhon ke safety par ratti bhar ka bhi khatra na ho.",
+    outcome: "6 ghante lagatar chale cultural presentation mein zero safety hazard raha. Audio aur lighting setup perfect chalne se school administration ne kafi relief zahir kiya.",
+    clientQuote: "School management unki proactive safety aur responsive layout se behad khush tha.",
     image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=800"
   },
   {
@@ -78,10 +78,10 @@ export const successStories: SuccessStory[] = [
     title: "The Vintage 60th Jubilee Feast",
     category: "Birthday",
     location: "Renusagar VIP Colony",
-    challenge: "Transforming a tight residential lawn into an intimate, warm nostalgic setup honoring a retired officer’s 60th birthday with sophisticated vintage aesthetics, without cluttering the passage.",
-    solution: "Drafted an ambient garden layout with classic warm string-lights hung in beautiful geometric webs, rich leather accent seating, and a customized menu highlighting classic dishes from the 1970s.",
-    outcome: "A deeply sentimental atmosphere combining modern luxury comfort with a warm nostalgic charm, comfortably accommodating 250 close relatives.",
-    clientQuote: "It felt like stepping into an timeless dreamscape. Pawan's team is extraordinarily considerate.",
+    challenge: "Ek retired officer ke 60th birthday ko khas banane ke liye Renusagar ke chhote lawn space ko ek elegant vintage aesthetic lounge mein badalna, bina kisi crowd blockage ke.",
+    solution: "Humne warm nostalgic starlight pattern weaves aur space intelligent layout design kiya. Seating par custom leather elements aur 1970s ke hit traditional dishes ka menu design kiya.",
+    outcome: "250 close relatives ke sath ek behad emotional aur premium family environment bana. Purani yaadein taaza karne ke liye badhiya warm atmosphere mila.",
+    clientQuote: "Aisa laga jaise hum kisi rangeen haseen daur mein wapas laut aaye hain. Pawan Kumar ki team sach mein bohot thoughtful hai.",
     image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=800"
   }
 ];
@@ -92,7 +92,7 @@ export const googleReviews: GoogleReview[] = [
     authorName: "Sanjeev Tripathi",
     rating: 5,
     relativeTime: "1 week ago",
-    text: "Excellent service and high-quality material used in Anpara. Under leadership of Gopal, the team worked non-stop to ensure my sister's wedding went flawlessly.",
+    text: "Anpara mein vakai bohot behtareen service aur high-quality materials hain. Gopal ji ke leadership mein team ne bilkul non-stop kaam karke behan ki shaadi flawless banyi.",
     location: "Anpara",
     verified: true
   },
@@ -101,7 +101,7 @@ export const googleReviews: GoogleReview[] = [
     authorName: "Vikram Soni",
     rating: 5,
     relativeTime: "1 month ago",
-    text: "We deliver what we promise is 100% true. They did not abandon the venue decoration even when rain hit. Strongly recommended.",
+    text: "'Jo vaada karte hain, use nibhaate hain' bilkul sach hai. Tez baarish ke bawajood unhone kaam bich me nahi choda. Sab ko recommend karunga.",
     location: "Renusagar",
     verified: true
   },
@@ -110,7 +110,7 @@ export const googleReviews: GoogleReview[] = [
     authorName: "Meenakshi Dhar",
     rating: 5,
     relativeTime: "2 months ago",
-    text: "Best caterers in Shaktinagar/Sonbhadra. Transparent pricing, very cooperative owners, and top-class glass pane setups.",
+    text: "Shaktinagar/Sonbhadra area ke best caterers. Saaf hisab, cooperations aur premium glass frames setups toh dekhne layak hote hain.",
     location: "Shaktinagar",
     verified: true
   },
@@ -119,7 +119,7 @@ export const googleReviews: GoogleReview[] = [
     authorName: "Pradeep Gupta",
     rating: 5,
     relativeTime: "3 months ago",
-    text: "Extremely tidy, beautiful lighting, and staff members are very well behaved. Highly professional.",
+    text: "Tidy decoration, khubsoorat lighting aur inke team members ka behavior bohot badhiya hai- bilkul respectful aur cooperative.",
     location: "Sonbhadra",
     verified: true
   },
@@ -128,7 +128,7 @@ export const googleReviews: GoogleReview[] = [
     authorName: "Deepak Srivastava",
     rating: 5,
     relativeTime: "3 months ago",
-    text: "Punctual. Setup was ready 4 hours before the event started. Outstanding commitment.",
+    text: "Behad punctual hain. Humare event shuru hone se 4 ghante pehle hi pura setup ready ho chuka tha. Gazab ki commitment hai.",
     location: "Auri",
     verified: true
   },
@@ -137,7 +137,7 @@ export const googleReviews: GoogleReview[] = [
     authorName: "Nitin Pandey",
     rating: 5,
     relativeTime: "4 months ago",
-    text: "Unbeatable quality of royal main stage sofas and carpet lines. Felt exceptionally rich.",
+    text: "Unbeatable royal stage setups, royal sofas, and clean carpets. Pure luxurious feel aayi.",
     location: "Bina",
     verified: true
   }
@@ -148,30 +148,30 @@ export const socialBadges: SocialBadge[] = [
     id: "badge_1",
     label: "On-Time Setup",
     iconName: "Clock",
-    description: "Every steel frame, chandelier, and tablecloth is locked in place long before your first guest arrives."
+    description: "Har ek steel frame, crystal chandelier aur table cloth aapke pehle mehmaan ke aane se 4 ghante pehle ready milta hai."
   },
   {
     id: "badge_2",
     label: "Professional Execution",
     iconName: "Briefcase",
-    description: "Uniformed experts, dedicated project managers, and immaculately sanitized culinary preparation structures."
+    description: "Uniformed experts, dedicated project managers, aur Gopal Kumar ke guidance mein chalne wale hygienic kitchens."
   },
   {
     id: "badge_3",
-    label: "Dedicated Event Support",
+    label: "Har Step Par Hamari Team Aapke Saath.",
     iconName: "Shield",
-    description: "On-site supervisors remain active throughout your function to handle adjustments on demand."
+    description: "Humare on-site coordinators pure time venue par rehte hain taaki lighting ya layout changes ko turant satisfy kiya ja sake."
   },
   {
     id: "badge_4",
     label: "Reliable Team",
     iconName: "Users",
-    description: "Never leaving work halfway. Under the direct leadership of Pawan & Gopal, our word is our bond."
+    description: "Hum dhokha nahi dete aur na hi kaam beech mein chhodte hain. Pawan aur Gopal Kumar ke direct leadership mein humara har vaada bilkul pakka hai."
   },
   {
     id: "badge_5",
     label: "Transparent Communication",
     iconName: "MessageSquare",
-    description: "Honest itemized estimates, zero hidden setup overheads, and frequent milestone progress reports."
+    description: "Sahi GST estimates, khula hisab-kitab aur zero hidden charges, taaki aapka budget aur planning hamesha control mein rahe."
   }
 ];

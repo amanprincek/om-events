@@ -8,9 +8,9 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
             <span className="text-overline mb-4 block">Get In Touch</span>
-            <Heading level={2} className="mb-6">Let's craft your grand event.</Heading>
+            <Heading level={2} className="mb-6">Aaiye aapke grand event ko shaandar banayein.</Heading>
             <p className="text-[var(--color-text-muted)] font-light text-lg mb-12 max-w-md leading-relaxed">
-              Contact us to discuss your vision. We prioritize immediate responses because we know your peace of mind matters.
+              Apne event ke vision ko humare sath discuss karein. Hum turant reply karte hain kyunki aapka sukoon aur bharosa hi humare liye sabse bada hai.
             </p>
 
             <div className="space-y-10">
@@ -35,14 +35,14 @@ export default function Contact() {
                 </GlassPanel>
                 <div>
                   <h4 className="text-overline mb-2 text-white">WhatsApp</h4>
-                  <p className="text-[var(--color-text-muted)] mb-3 font-light">Available for quick queries and bookings.</p>
+                  <p className="text-[var(--color-text-muted)] mb-3 font-light">Quick queries aur fast bookings ke liye pure din available.</p>
                   <a 
                     href="https://wa.me/919452460040" 
                     target="_blank" 
                     rel="noreferrer"
                     className="inline-flex items-center text-[var(--color-brand)] hover:text-[var(--color-champagne)] font-medium transition-colors border-b border-[var(--color-brand)] pb-1"
                   >
-                    Chat with Pawan Kumar <span>&rarr;</span>
+                    Pawan Kumar se baat karein <span>&rarr;</span>
                   </a>
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default function Contact() {
                     Uttar Pradesh, India
                   </p>
                   <p className="text-[var(--color-text-muted)] mt-2 text-sm italic font-light opacity-80">
-                    Serving Anpara, Auri, Sonbhadra, Renusagar, Shaktinagar, and surrounding areas.
+                    Serving Anpara, Auri, Sonbhadra, Renusagar, Shaktinagar, aur aas-paas ke sabhi ilake.
                   </p>
                 </div>
               </div>
@@ -72,9 +72,9 @@ export default function Contact() {
                <div className="absolute inset-0 opacity-[0.05] bg-[radial-gradient(var(--color-brand)_1px,transparent_1px)] [background-size:24px_24px]"></div>
                
                <div className="relative z-10 text-center">
-                <Heading level={3} className="mb-6">Request a Consultation</Heading>
+                <Heading level={3} className="mb-6">Consultation Book Karein</Heading>
                 <p className="text-[var(--color-text-muted)] font-light mb-10 max-w-sm mx-auto">
-                  Due to our commitment to quality, we only accept a limited number of bookings per season. Early discussions are recommended.
+                  Quality aur perfection banaye rakhne ke liye hum har season mein limited bookings hi accept karte hain. Sahi planning ke liye aaj hi baat shuru karein.
                 </p>
                 
                 <div className="bg-[var(--color-slate-midnight)] p-8 rounded-[var(--radius-sharp)] border border-[var(--color-border-glass)] text-left w-full max-w-sm mx-auto shadow-[var(--shadow-trust-anchor)] relative">
@@ -85,7 +85,7 @@ export default function Contact() {
                     <span className="text-[var(--color-text-primary)] font-medium pl-6 text-right">Pawan Kumar</span>
                   </div>
                   <div className="flex justify-between items-center mb-8 pb-6 border-b border-[var(--color-border-glass)]">
-                    <span className="text-[var(--color-text-muted)] text-sm">Working Languages</span>
+                    <span className="text-[var(--color-text-muted)] text-sm">Humari Languages</span>
                     <span className="text-[var(--color-text-primary)] font-medium pl-6 text-right">Hindi, English, Bhojpuri</span>
                   </div>
                   
@@ -94,7 +94,7 @@ export default function Contact() {
                     className="w-full"
                     onClick={() => window.open('https://wa.me/919452460040', '_blank')}
                   >
-                    Message Us Directly
+                    WhatsApp Karein
                   </Button>
                 </div>
                </div>

@@ -4,8 +4,8 @@ export default function About() {
   const stats = [
     { value: "2019", label: "Established" },
     { value: "2500+", label: "Guest Capacity" },
-    { value: "10-30", label: "Expert Staff" },
-    { value: "3", label: "Simultaneous Events" },
+    { value: "10-30", label: "Trained Team" },
+    { value: "3", label: "Ek Sath Setups" },
   ];
 
   return (
@@ -19,19 +19,19 @@ export default function About() {
           <div>
             <span className="text-overline mb-4 block">Our Promise</span>
             <Heading level={2} className="mb-8">
-              A commitment to excellence that <br />
-              <span className="text-[var(--color-brand)] italic font-light">never waivers.</span>
+              Har event mein humara vaada <br />
+              <span className="text-[var(--color-brand)] italic font-light">jo kabhi nahi tootega.</span>
             </Heading>
             
             <div className="space-y-6 text-[var(--color-text-muted)] text-lg font-light leading-relaxed font-sans">
               <p>
-                We understand that weddings and large gatherings are milestone moments. The biggest fear hosts face is event failure, poor arrangements, or last-minute issues. That is where we step in.
+                Hum jante hain ki shaadi aur bade parivaarik events aapke zindagi ke sabse bade pal hote hain. Sabse bada darr jo har client ko lagta hai woh hai - kharab setup, bekaar arrangements ya last-minute ki tension. Aur yahin par hum aapki saari chinta door karte hain.
               </p>
               <p>
-                At Om Tent House And Caterers, our reputation is built on <strong className="text-[var(--color-text-primary)] font-medium">absolute reliability</strong>. We honor the promises made to our customers and have a strict policy of never abandoning work midway. 
+                Om Tent House And Caterers ka naam humari <strong className="text-[var(--color-text-primary)] font-medium">pakee reliability aur imaandari</strong> par tika hai. Hum jo vaada karte hain, use har haal mein poora karte hain aur humara strict rule hai ki kaam kabhi bhi beech mein adhura nahi choda jata.
               </p>
               <p>
-                Under the leadership of Pawan Kumar and Gopal Kumar, our seasoned team consistently over-delivers, ensuring that when you trust us with your event, you can sit back and truly enjoy the moment.
+                Pawan Kumar aur Gopal Kumar ke direct supervision mein humari experienced team behtareen kaam karti hai. Iska matlab jab aap humpar bharosa karte hain, tab aap bina kisi chinta ke apne mehmanon ke sath event enjoy kar sakte hain.
               </p>
             </div>
           </div>

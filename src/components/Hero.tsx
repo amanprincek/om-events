@@ -19,11 +19,11 @@ export default function Hero() {
           Auri, Anpara & Surrounding Regions
         </span>
         <Heading level={1} className="mb-6 drop-shadow-lg max-w-5xl mx-auto">
-          Grand Events, <br/>
-          <span className="font-light italic opacity-90">Flawlessly Executed.</span>
+          Bade Events Aur Shaadiyan, <br/>
+          <span className="font-light italic opacity-90 text-[var(--color-brand)]">Bina Kisi Rok-Tok Ke Poore.</span>
         </Heading>
         <p className="text-lg md:text-xl text-[var(--color-text-muted)] mb-10 max-w-2xl mx-auto font-sans font-light drop-shadow-md leading-relaxed">
-          From breathtaking tent setups to premium catering, we ensure the most important events of your life are stunning, stress-free, and memorable.
+          Ekdam pyaare waterproof tent setups se lekar premium bartan aur catering decoration tak, hum aapke parivaar ke sabse bade din ko sundar, tension-free aur behad shandaar banate hain.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -34,7 +34,7 @@ export default function Hero() {
             onClick={() => window.open('https://wa.me/919452460040', '_blank')}
             className="w-full sm:w-auto"
           >
-            WhatsApp Us
+            WhatsApp Karein
           </Button>
           <Button 
             variant="secondary" 
@@ -43,7 +43,7 @@ export default function Hero() {
             onClick={() => window.location.href = 'tel:+919452460040'}
             className="w-full sm:w-auto"
           >
-            Call for Consultation
+            Call Karein
           </Button>
         </div>
       </Container>

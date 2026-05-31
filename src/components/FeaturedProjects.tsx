@@ -96,10 +96,10 @@ export default function FeaturedProjects() {
               CRAFTED LANDMARKS
             </span>
             <Heading level={2} className="text-4xl md:text-6xl tracking-wide font-light mb-6">
-              Our <span className="font-serif text-[var(--color-brand)] italic">Signature Works.</span>
+              Humare Shandaar <span className="font-serif text-[var(--color-brand)] italic">Signature Works.</span>
             </Heading>
             <p className="text-[var(--color-text-muted)] font-sans font-light leading-relaxed max-w-2xl mx-auto text-base md:text-lg">
-              Explore how Pawan Kumar and Gopal Kumar elevate events into historical moments. From massive 18,000 sq ft hurricane-proof canopies to royal dining enclosures, these case studies demonstrate the absolute certainty of our word.
+              Dekhiye kaise Pawan Kumar aur Gopal Kumar har bade event ko royal aur safe banate hain. 18,000 sq ft ke waterproof massive tents se lekar elegant golden stages tak, humari har case study aapko hamare kaam ka dum aur commitment ka saboot dikhayegi.
             </p>
           </div>
         </Container>
@@ -114,7 +114,7 @@ export default function FeaturedProjects() {
             <div className="lg:col-span-4 space-y-6">
               <div className="p-4 bg-[var(--color-slate-obsidian)] border border-[var(--color-border-glass)] rounded-[var(--radius-sharp)]">
                 <span className="text-[10px] font-mono text-[var(--color-brand)] tracking-[0.2em] uppercase block mb-4">
-                  SELECT ARCHITECTURAL STUDY
+                  CHUNYE EVENT CASE STUDY
                 </span>
                 
                 <div className="space-y-3">
@@ -267,7 +267,7 @@ export default function FeaturedProjects() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-brand)]/5 rounded-full blur-2xl"></div>
                 
                 <h4 className="font-serif text-2xl text-[var(--color-brand)] border-b border-[var(--color-border-glass)] pb-4 mb-8 flex items-center gap-2">
-                  <FileText className="w-6 h-6" /> Case Chronicle: Editorial Story Format
+                  <FileText className="w-6 h-6" /> Event Case Study: Sachi Kahaani
                 </h4>
 
                 <div className="space-y-8">
@@ -335,7 +335,7 @@ export default function FeaturedProjects() {
                 {/* Services Delivered Sub-section (Section 1 extension) */}
                 <div className="mt-12 pt-8 border-t border-[var(--color-border-glass)] text-left">
                   <div className="text-xs font-mono uppercase tracking-[0.25em] text-[var(--color-brand)] mb-3">
-                    COMPREHENSIVE SERVICES DEPLOYED:
+                    DELIVERED PREMIUM SERVICES:
                   </div>
                   <div className="flex flex-wrap gap-2.5">
                     {activeProject.servicesDelivered.map((serv, idx) => (
@@ -362,13 +362,13 @@ export default function FeaturedProjects() {
         <Container>
           <div className="max-w-4xl mx-auto text-center mb-16">
             <span className="text-overline mb-4 block tracking-[0.25em] text-[var(--color-brand)]">
-              Before / After Transmutation
+              Zameen Se Shaan-O-Shaukat
             </span>
             <Heading level={2} className="text-3xl md:text-5xl leading-tight mb-4">
-              Ground Zero To <span className="font-serif text-[var(--color-brand)] italic">Unrivaled Grandeur.</span>
+              Empty Ground Se <span className="font-serif text-[var(--color-brand)] italic">Royal Venue Tak.</span>
             </Heading>
             <p className="text-[var(--color-text-muted)] font-light text-sm md:text-base max-w-2xl mx-auto">
-              Drag the golden central divider below horizontally to reveal how we command empty fields, raw yards, and parking zones, turning them into imperial wedding backdrops.
+              Iis golden central divider ko drag karke dekhiye kaise hum khali khet, banzar zameen aur parking zones ko ek behtareen royal look mein badal dete hain.
             </p>
           </div>
 
@@ -507,12 +507,12 @@ export default function FeaturedProjects() {
             <div className="lg:col-span-5 text-left space-y-6">
               <span className="text-overline block tracking-[0.2em] text-[var(--color-brand)]">Strategic Logistics</span>
               <Heading level={2} className="text-3xl md:text-5xl leading-tight">
-                Our Territory <br/>
-                <span className="font-serif text-[var(--color-brand)] italic">And Reach.</span>
+                Hamara Territory <br/>
+                <span className="font-serif text-[var(--color-brand)] italic">Aur Reach.</span>
               </Heading>
               
               <p className="text-[var(--color-text-muted)] font-light text-base leading-relaxed">
-                We operate across all of Sonbhadra’s key industrial townships and wedding centers. Select any local node in our schematics matrix to observe regional setup volume and signature project distribution.
+                Hum Sonbhadra ke sabhi key industrial townships aur wedding areas mein behtareen setups deliver karte hain. Humare active nodes mein se kisi ko bhi select karke us area ki setups detail dekhein.
               </p>
 
               {/* Active Region Stats display panel */}
@@ -539,11 +539,11 @@ export default function FeaturedProjects() {
 
                       <div className="grid grid-cols-2 gap-4 pt-6 border-t border-[var(--color-border-glass)]">
                         <div>
-                          <div className="text-[9px] font-mono text-[var(--color-text-muted)] uppercase tracking-wider">SUCCESSFUL SETUP VOLUME</div>
+                          <div className="text-[9px] font-mono text-[var(--color-text-muted)] uppercase tracking-wider">SUCCESSFUL EVENT SETUPS</div>
                           <div className="text-2xl font-serif font-semibold text-white mt-1">{node.projectCount}+</div>
                         </div>
                         <div>
-                          <div className="text-[9px] font-mono text-[var(--color-text-muted)] uppercase tracking-wider">RELIABILITY INDEX</div>
+                          <div className="text-[9px] font-mono text-[var(--color-text-muted)] uppercase tracking-wider">RELIABILITY PERCENT</div>
                           <div className="text-2xl font-serif font-semibold text-emerald-400 mt-1">100% On-Time</div>
                         </div>
                       </div>
@@ -663,12 +663,12 @@ export default function FeaturedProjects() {
             </span>
 
             <Heading level={2} className="text-3xl md:text-5xl lg:text-6xl tracking-wide font-light mb-6">
-              Ready To Plan <br/>
-              <span className="font-serif text-[var(--color-brand)] italic">Your Event?</span>
+              Apna Event Plan <br/>
+              <span className="font-serif text-[var(--color-brand)] italic">Karne Ke Liye Taiyar Hain?</span>
             </Heading>
 
             <p className="text-[var(--color-text-muted)] font-sans font-light leading-relaxed max-w-2xl mx-auto text-base md:text-lg mb-10">
-              In peak wedding season, we restrict simultaneous bookings to ensure absolute material cleanliness, strict timeline compliance, and direct on-site management under the Kumar family's personal watch. Secure your date now.
+              Peak wedding season mein hum limited bookings hi lete hain taaki har kapda aur truss bilkul saaf rahe, kaam sahi time par poora ho, aur Pawan-Gopal Kumar khud on-site reh kar sab manage karein. Aaj hi apni date secure karein.
             </p>
 
             {/* Triple Interactive CTA Options */}
@@ -681,7 +681,7 @@ export default function FeaturedProjects() {
                 className="w-full sm:w-auto px-8"
                 onClick={() => window.location.href = "tel:+919452460040"}
               >
-                Call Now (+91 94524 60040)
+                Call Karein
               </Button>
 
               <Button
@@ -695,7 +695,7 @@ export default function FeaturedProjects() {
                 }
                 onClick={() => window.open('https://wa.me/919452460040', '_blank')}
               >
-                WhatsApp Now
+                WhatsApp Karein
               </Button>
 
               <Button
@@ -711,7 +711,7 @@ export default function FeaturedProjects() {
                   }
                 }}
               >
-                Schedule Site Visit
+                Site Visit Book Karein
               </Button>
 
             </div>
@@ -719,7 +719,7 @@ export default function FeaturedProjects() {
             {/* Kumar Slogans footnote */}
             <div className="mt-8 flex items-center justify-center gap-2 text-xs font-mono text-[var(--color-text-muted)] text-center">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-              <span>Available all days. Pre-booking consultation is completely free of cost.</span>
+              <span>Available all days. pre-booking help aur consultation bilkul free of cost hai.</span>
             </div>
 
           </div>

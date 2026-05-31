@@ -12,10 +12,10 @@ export const signatureProjects: SignatureProject[] = [
     heroImage: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1200",
     
     story: {
-      challenge: "Covering 18,000 square feet of raw local sports pasture with a fully insulated waterproof cathedral-style tent during unstable unseasonable windstorms in the Shaktinagar region.",
-      planning: "Drafted a robust structural blueprint with ground-anchor heavy iron piles driven 4 feet deep. Integrated custom dual-layered gold fabric to block severe wind drafts and maintain stable ambient indoor temps.",
-      execution: "A team of 28 trained craftsmen spent 72 continuous hours executing precision alignments. Embedded heavy safety wire ropes on overhead trusses and installed 15 premium crystal chandeliers with custom dimmer controls.",
-      outcome: "A magnificent royal gold pavilion that remained completely stationary and watertight despite 45 km/h winds outside. The grand entrance sequence felt like a palace entrance."
+      challenge: "Shaktinagar region mein unseasonable tez hawaon aur aandhi-toofan ke beech 18,000 square feet ke vacant ground par ek fully waterproof cathedral-style heavy structure setup karna sabse bada challenge tha.",
+      planning: "Hamari team ne 4 feet gehre solid iron anchor piles ke sath ek heavy structural layout design kiya. Iske baad custom dual-layered gold fabric drapery lagayi gayi taaki bahar ki tez hawa stop ho sake aur andar ka temperature stable rahe.",
+      execution: "Gopal aur Pawan Kumar ke leadership mein 28 trained artisans ne lagatar 72 ghante kaam karke is setup ko khada kiya. Saari overhead trusses mein heavy safety ropes fit kiye gaye aur custom dimmers ke sath 15 crystal chandeliers install kiye.",
+      outcome: "Tension-free bharosa! Bahar 45 km/h ki tez hawayein aur baarish hone ke bawajood pura royal gold pavilion ekdam solid aur completely waterproof raha. Guests ke liye entrance sequence bilkul ek mahal jaisa lag raha tha."
     },
 
     scaleIndicators: {
@@ -30,11 +30,11 @@ export const signatureProjects: SignatureProject[] = [
       beforeLabel: "Ground Zero: Vacant VIP Sports Pasture",
       afterUrl: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1200",
       afterLabel: "Ascension: Golden Handcrafted Masterpiece",
-      description: "How we transformed a muddy, uneven grass field into a world-class banquet paradise."
+      description: "Dekhiye kaise humne ek blank gile mitti wale maidan ko ek royal banquet palace mein badal diya."
     },
 
     clientQuote: {
-      text: "We were panic-stricken when we saw the weather forecasting storm winds, but Pawan Kumar was unfazed. When we arrived, the structure felt as strong and solid as a concrete building.",
+      text: "Weather forecast mein tez toofan dekhkar hum bohot ghabra gaye the, par Pawan Kumar ne kaha ki aap fikar mat kijiye. Jab hum venue par pahuche, toh setup ekdam concrete building jaisa majboot aur safe tha. Hum jo vaada karte hain, use poora karte hain!",
       author: "Akhilesh Dwivedi",
       role: "Father of the Bride"
     }
@@ -50,10 +50,10 @@ export const signatureProjects: SignatureProject[] = [
     heroImage: "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=1200",
     
     story: {
-      challenge: "Managing a high-volume catering flow for 1,500 elite guests while guaranteeing immediate service and preserving pristine luxury seating visuals without kitchen smoke or odor entering the main reception pavilion.",
-      planning: "Conceived a modular twin-dome division using custom heat-insulated partitions. Formulated hidden servers-only logistics alleys to facilitate silent food transport.",
-      execution: "Built a fully-ventilated secondary staging kitchen behind the main stage. Laid down high-gloss white flooring and organized 14 separate live-cooking counters run under direct supervision of Gopal Kumar.",
-      outcome: "Served 42 rich regional dishes flawlessly. Hot desserts like our famous ghee-fried Jalebis reached tables in seconds with absolutely zero smoke ingress or guest blockages."
+      challenge: "1,500 VIP guests ke liye heavy catering flow manage karna, bina kisi delay ke hot fresh food serve karna, aur kitchen ka dhuan ya smell main luxury seating area tak na pahuchne dena humare samne ek badi zimmewari thi.",
+      planning: "Humne custom heat-insulated partitions se modular twin-dome layout design kiya. Iske alawa, silent service ke liye servers-only secret logistics alleys banayi gayi taaki khana bina kisi shor ke move ho sake.",
+      execution: "Main stage ke theek peeche ek high-ventilation service kitchen banaya gaya. Pure dining area mein pristine high-gloss white flooring lagayi gayi aur Gopal Kumar ke direct supervision mein 14 live-cooking counters lagaye gaye.",
+      outcome: "Poore 42 rich regional delicacies ko bina kisi blockage ke serve kiya gaya. Humari special ghee-fried Jalebi aur garam rabri guests tak seconds mein garam-garam pahuchi, aur dhuen ka koi nishaan tak nahi tha."
     },
 
     scaleIndicators: {
@@ -68,11 +68,11 @@ export const signatureProjects: SignatureProject[] = [
       beforeLabel: "Before: Raw Warehouse & Wet Lawn",
       afterUrl: "https://images.unsplash.com/photo-1555507036-ab1e4006aa06?auto=format&fit=crop&q=80&w=1200",
       afterLabel: "After: Pristine White Banquet Canopy",
-      description: "Transformation of a complex industrial warehouse yard into a pristine, high-end dining court."
+      description: "Ek raw industrial warehouse yard ko humne ek shaandar, ultra-luxurious dining court mein transform kar diya."
     },
 
     clientQuote: {
-      text: "The segregation of the catering area with custom soundproofing panels was pure genius. Our guests walked into a beautiful visual palace and dined with five-star efficiency.",
+      text: "Catering area ko custom acoustics panel se alag karne ka plan sabse behtareen tha. Humare saare mehmaan ek behad khoobsurat palace mein dakhil hue aur 5-star quality ke sath khane ka lutf uthaya.",
       author: "Shweta Singhal",
       role: "Event Curator"
     }
@@ -88,10 +88,10 @@ export const signatureProjects: SignatureProject[] = [
     heroImage: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=1200",
     
     story: {
-      challenge: "Setting up a high-power performance stage, massive LED backdrop, and stadium-level custom lighting with absolute, zero-fault safety parameters regarding ground wiring loops.",
-      planning: "Plotted CAD-based load balance assessments for heavy trusses to prevent stage sagging. Configured a closed-network backup circuit with triple redundancy generators.",
-      execution: "Suspended a massive visual star-canopy using 1.2 kilometers of warm twinkling fairy webs. Insulated and armored every single cable in solid rubber tiles to ensure child-safe movement across lawns.",
-      outcome: "A spectacular, high-voltage rhythmic visual experience that supported a 6-hour continuous presentation flawlessly. The local administration lauded our absolute safety protocols."
+      challenge: "Ek high-power performance stage, bada LED backdrop aur stadium-level heavy lighting install karna, woh bhi zero-fault safety parameters aur complete ground wire padding ke sath, ek bada task tha.",
+      planning: "Hamari team ne stage security ke liye detailed digital load balance planning ki. Power failure se bachne ke liye triple backup generator circuits setup kiye gaye.",
+      execution: "Lagbhag 1.2 kilometers lambi golden twinkling fairy lights aur warm chandeliers se chamakta star-canopy banaya gaya. Safety ke liye har ek electrical cable ko solid safety rubber tiles ke andar waterproof kiya gaya.",
+      outcome: "Lagatar 6 ghante tak bina kisi minor glitch ke pura function successfully chala. Local administration aur management ne humare high security aur safety wire networks ki bohot taareef ki."
     },
 
     scaleIndicators: {
@@ -106,11 +106,11 @@ export const signatureProjects: SignatureProject[] = [
       beforeLabel: "Before: Dark, Raw Open Ground",
       afterUrl: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=1200",
       afterLabel: "After: Ray Of Luminescence & Safety Staging",
-      description: "Structural elevation of a pitch-dark grass plot into a professional performance amphitheater."
+      description: "Ek sunsan gile andhere maidan ko humne ek professional, dynamic light aur sound amphitheater mein transform kiya."
     },
 
     clientQuote: {
-      text: "We had high-profile dignitaries attending, and power outages or wire hazards were simply not an option. Om Tent House delivered flawless technical execution and ironclad safety.",
+      text: "Event mein bohot bade VIPs aane wale the, isliye power cut ya wire safety par koi compromise nahi ho sakta tha. Om Tent House ne behtareen quality aur 100% safe execution dikhaya.",
       author: "Dr. K.P. Maurya",
       role: "Organizing Committee Head"
     }
@@ -120,37 +120,37 @@ export const signatureProjects: SignatureProject[] = [
 export const serviceBreakdown: ServiceDetail[] = [
   {
     title: "Bespoke Decoration",
-    description: "Premium French drapery, silk panels, and exquisite fresh floral layouts customized specifically to lock and blend with your color theme.",
+    description: "Premium French drapery, silk panels, aur fresh original floral decoration, jo bilkul aapke custom family color theme ke sath blend karega.",
     icon: "Flower"
   },
   {
     title: "Luminescent Lighting",
-    description: "Imported crystal chandeliers, computer-programmed warm kinetic fairy webs, dimmers, spot panels, and safety-grounded circuits.",
+    description: "Imported crystal chandeliers, computer-programmed warm starlight webs, dimmers, spot panels, aur completely safe grounded generator connections.",
     icon: "Sparkles"
   },
   {
     title: "Premium Tent Structures",
-    description: "All-season German hanger pavilions and heavy military-grade weather-insulated canopy roofs driven securely with deep ground piles.",
+    description: "Har season ke liye waterproof German hanger structures aur heavy wind-resistant premium drapes, jinhe solid heavy iron piles se ground kiya jata hai.",
     icon: "Home"
   },
   {
     title: "Sovereign Catering",
-    description: "Sumptuous traditional Avadhi, Punjabi, and continental culinary counters prepared cleanly under Gopal Kumar's strict inspection.",
+    description: "Swadishth traditional Avadhi, Punjabi, aur multi-cuisine pakwan jo Gopal Kumar ke strict supervision ke andar poori hygiene aur shuddh ghee se banaye jate hain.",
     icon: "Utensils"
   },
   {
     title: "Stage & Truss Design",
-    description: "High-load aluminum truss lines, safety guardrails, elevated main royal stages, and custom rich backdrops made to resist heavy winds.",
+    description: "Heavy load-bearing aluminum trusses, safety side-railings, elevated royal main stages, aur wind-proof backdrops jo tej aandhi mein bhi hil nahi sakte.",
     icon: "Layers"
   },
   {
     title: "Luxury Lounge Furniture",
-    description: "Maharaja-style high-back velvet chairs, customized dining couches, pristine table linens, and velvet banquet covers.",
+    description: "Maharaja-style high-back velvet royal chairs, customized dining lounges, saaf-suthri table sheets, aur velvet banquet coverings jo premium look deti hain.",
     icon: "Armchair"
   },
   {
     title: "Silent Power Security",
-    description: "High-capacity, completely insulated, silent power backup generator rigs to ensure your celebration never loses its spark.",
+    description: "High-capacity completely silent power backup generator rigs taaki aapki poori shaadi bina kisi power cut ke dhoom-dham se chalti rahe.",
     icon: "Zap"
   }
 ];
@@ -161,34 +161,34 @@ export const regionalNodes: RegionNode[] = [
     projectCount: 148,
     featuredProject: "The Grand Culinary Oasis",
     coordinates: { x: 18, y: 35 },
-    description: "Our primary hub for peak culinary catering, large township receptions, and thematic outdoor buffet canopies."
+    description: "Hamara primary hub jo pure catering service, badi township receptions aur royal buffet canopies ke liye mashhoor hai."
   },
   {
     name: "Sonbhadra",
     projectCount: 204,
     featuredProject: "The Kinetic Starlight Jubilee",
     coordinates: { x: 48, y: 20 },
-    description: "A major administrative region harboring grand wedding pavilions, corporate truss setups, and steel hanger installations."
+    description: "Ek major administrative district jahan humne सैकड़ों grand wedding pavilions, structural trusses, aur waterproof hangers install kiye hain."
   },
   {
     name: "Renusagar",
     projectCount: 95,
     featuredProject: "The Vintage 60th Jubilee Feast",
     coordinates: { x: 72, y: 48 },
-    description: "Host of romantic garden lighting alignments, private residential elite lounges, and warm aesthetic string weaves."
+    description: "Aesthetic garden lighting, private luxury lounges, aur warm romantic fairy stars lighting setups ka mashhoor center."
   },
   {
     name: "Shaktinagar",
     projectCount: 122,
     featuredProject: "The Chandelier Pavilion",
     coordinates: { x: 32, y: 76 },
-    description: "Home of our largest industrial heavy-wind waterproof wedding super-structures and grand multi-tier stages."
+    description: "Yahan hum sabse bade waterproof wedding structures, German hanging domes aur grand multi-tier stages deliver karte hain."
   },
   {
     name: "Nearby Regions",
     projectCount: 144,
     featuredProject: "Regional Academy Cultural Day",
     coordinates: { x: 84, y: 78 },
-    description: "Spanning Bina, Auri, Kakri, and Shaktinagar Outskirts with safe staging, setups, and local festivals."
+    description: "Bina, Auri, Kakri, aur aas-paas ke ilake jahan hamari team custom layout design aur complete event operations karti hai."
   }
 ];

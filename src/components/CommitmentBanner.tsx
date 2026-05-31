@@ -9,7 +9,7 @@ export default function CommitmentBanner() {
       
       <Container className="relative z-10">
         <Heading level={3} className="text-center italic font-light tracking-wide text-[var(--color-text-primary)] px-4">
-          "Your Celebration Deserves <span className="text-[var(--color-brand)]">Complete Commitment.</span>"
+          "Aapki celebration deserve karti hai ek <span className="text-[var(--color-brand)]">saccha commitment aur poora dhyaan.</span>"
         </Heading>
       </Container>
     </div>

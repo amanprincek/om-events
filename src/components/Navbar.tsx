@@ -362,7 +362,7 @@ export default function Navbar() {
                     <svg className="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.454L0 24zm6.59-4.846c1.6.95 3.149 1.45 4.674 1.451a9.92 9.92 0 005.148-1.423l.37-.22 3.826.1a12.022 12.022 0 00-.09-3.722l-.241-.383a9.954 9.954 0 001.401-5.066c.002-5.467-4.403-9.913-9.824-9.913a9.8 9.8 0 00-6.945 2.898A9.857 9.857 0 002.13 11.838a9.92 9.92 0 001.439 5.093l-.265.419L3.022 21.03l3.625-.953l-.001-.293z" />
                     </svg>
-                    <span>Connect on WhatsApp</span>
+                    <span>WhatsApp Karein</span>
                   </a>
 
                   {/* Option B: Standard phone dial link */}
@@ -372,12 +372,12 @@ export default function Navbar() {
                     className="w-full py-4 px-6 bg-[var(--color-brand)] text-black flex items-center justify-center gap-3 active:scale-[0.98] transition-transform rounded-sm shadow-lg text-xs uppercase tracking-wider font-bold"
                   >
                     <Phone className="w-4 h-4 shrink-0 text-black animate-pulse" />
-                    <span>Call +91 94524 60040</span>
+                    <span>Call Karein</span>
                   </a>
                 </div>
 
                 <div className="text-[10px] text-center font-mono text-[var(--color-text-muted)] pt-2 uppercase">
-                  Available 24/7 • direct owners connect
+                  Available 24/7 • Direct On-Site Support
                 </div>
               </div>
             </motion.div>
