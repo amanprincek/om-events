@@ -1,0 +1,267 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // 1. Catch-all Default-Deny rule block
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // GATES & GLOBAL ROLES HELPERS
+
+    function isValidId(id) { 
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); 
+    }
+
+    function incoming() { 
+      return request.resource.data; 
+    }
+
+    function existing() { 
+      return resource.data; 
+    }
+
+    function isSignedIn() { 
+      return request.auth != null; 
+    }
+
+    // Role check helper drawing from '/staff' database collection
+    function getStaffRole() {
+      return get(/databases/$(database)/documents/staff/$(request.auth.uid)).data.role;
+    }
+
+    function isOwner() {
+      return isSignedIn() && (
+        getStaffRole() == 'OWNER' || 
+        request.auth.token.email == 'owner@omtent.com' || 
+        request.auth.token.email == 'amtech11083@gmail.com'
+      );
+    }
+
+    function isManager() {
+      return isSignedIn() && (
+        isOwner() || 
+        getStaffRole() == 'MANAGER' || 
+        request.auth.token.email == 'manager@omtent.com'
+      );
+    }
+
+    function isStaff() {
+      return isSignedIn() && (
+        isManager() || 
+        getStaffRole() == 'STAFF' || 
+        request.auth.token.email == 'staff@omtent.com'
+      );
+    }
+
+    // SCHEMA & TYPE VALIDATORS (ANTI-UPDATE-GAP)
+
+    function isValidCustomer(data) {
+      return data.keys().hasAll(['id', 'name', 'primaryPhone', 'createdAt']) &&
+             data.id is string && data.id.size() <= 64 &&
+             data.name is string && data.name.size() <= 128 &&
+             data.primaryPhone is string && data.primaryPhone.size() <= 20;
+    }
+
+    function isValidBooking(data) {
+      return data.keys().hasAll(['id', 'customerId', 'branchId', 'eventId', 'status', 'totalAmount', 'advancePaid', 'createdAt']) &&
+             data.id is string && data.id.size() <= 64 &&
+             data.customerId is string &&
+             data.branchId is string &&
+             data.eventId is string &&
+             data.status is string &&
+             data.totalAmount is number &&
+             data.advancePaid is number;
+    }
+
+    function isValidEvent(data) {
+      return data.keys().hasAll(['id', 'bookingId', 'type', 'venueDetails', 'setupStartDate', 'eventDate', 'teardownEndDate', 'guestCount', 'assignedStaffIds']) &&
+             data.id is string &&
+             data.bookingId is string &&
+             data.type is string &&
+             data.venueDetails is string &&
+             data.guestCount is number &&
+             data.assignedStaffIds is list;
+    }
+
+    function isValidCategory(data) {
+      return data.keys().hasAll(['id', 'name']) &&
+             data.id is string && data.name is string && data.name.size() <= 64;
+    }
+
+    function isValidInventory(data) {
+      return data.keys().hasAll(['id', 'categoryId', 'branchId', 'name', 'totalOwned', 'damagedQuantity', 'trackingMethod']) &&
+             data.id is string &&
+             data.categoryId is string &&
+             data.branchId is string &&
+             data.name is string && data.name.size() <= 128 &&
+             data.totalOwned is number &&
+             data.damagedQuantity is number &&
+             data.trackingMethod is string;
+    }
+
+    // Logistical records schemes
+    function isValidDispatch(data) {
+      return data.keys().hasAll(['id', 'eventId', 'status', 'items']) &&
+             data.id is string &&
+             data.eventId is string &&
+             data.status is string &&
+             data.items is list;
+    }
+
+    function isValidReturn(data) {
+      return data.keys().hasAll(['id', 'dispatchRecordId', 'status', 'items']) &&
+             data.id is string &&
+             data.dispatchRecordId is string &&
+             data.status is string &&
+             data.items is list;
+    }
+
+    function isValidMaintenance(data) {
+      return data.keys().hasAll(['id', 'returnRecordId', 'inventoryItemId', 'quantity', 'issueType', 'description', 'resolution', 'reportedAt']) &&
+             data.id is string &&
+             data.returnRecordId is string &&
+             data.inventoryItemId is string &&
+             data.quantity is number &&
+             data.issueType is string &&
+             data.description is string &&
+             data.resolution is string;
+    }
+
+    function isValidAlbum(data) {
+      return data.keys().hasAll(['id', 'name', 'tags', 'isFeatured', 'createdAt']) &&
+             data.id is string &&
+             data.name is string && data.name.size() <= 128 &&
+             data.tags is list &&
+             data.isFeatured is bool;
+    }
+
+    function isValidGalleryMedia(data) {
+      return data.keys().hasAll(['id', 'albumId', 'url', 'type']) &&
+             data.id is string &&
+             data.albumId is string &&
+             data.url is string && data.url.size() <= 512 &&
+             data.type is string;
+    }
+
+    function isValidStaff(data) {
+      return data.keys().hasAll(['id', 'branchId', 'name', 'phone', 'role', 'isActive']) &&
+             data.id is string &&
+             data.branchId is string &&
+             data.name is string && data.name.size() <= 128 &&
+             data.phone is string &&
+             data.role is string &&
+             data.isActive is bool;
+    }
+
+    function isValidMenu(data) {
+      return data.keys().hasAll(['id', 'name', 'isTemplate']) &&
+             data.id is string &&
+             data.name is string &&
+             data.isTemplate is bool;
+    }
+
+    function isValidInquiry(data) {
+      return data.keys().hasAll(['id', 'name', 'phone', 'createdAt', 'isResolved']) &&
+             data.id is string &&
+             data.name is string &&
+             data.phone is string &&
+             data.isResolved is bool;
+    }
+
+
+    // COLLECTIONS SECURITY SCHEMES
+
+    match /customers/{customerId} {
+      allow read: if isStaff();
+      allow create: if isManager() && isValidCustomer(incoming());
+      allow update: if isManager() && isValidCustomer(incoming()) && incoming().createdAt == existing().createdAt;
+      allow delete: if isOwner();
+    }
+
+    match /bookings/{bookingId} {
+      allow read: if isStaff();
+      allow create: if isManager() && isValidBooking(incoming());
+      allow update: if isManager() && isValidBooking(incoming()) && incoming().createdAt == existing().createdAt;
+      allow delete: if isOwner();
+    }
+
+    match /events/{eventId} {
+      allow read: if isStaff();
+      allow create: if isManager() && isValidEvent(incoming());
+      allow update: if isStaff() && isValidEvent(incoming());
+      allow delete: if isOwner();
+    }
+
+    match /inventory_categories/{categoryId} {
+      allow read: if isStaff() || !isSignedIn();
+      allow create: if isManager() && isValidCategory(incoming());
+      allow update: if isManager() && isValidCategory(incoming());
+      allow delete: if isOwner();
+    }
+
+    match /inventory/{itemId} {
+      allow read: if isStaff() || !isSignedIn();
+      allow create: if isManager() && isValidInventory(incoming());
+      allow update: if isStaff() && isValidInventory(incoming());
+      allow delete: if isOwner();
+    }
+
+    match /dispatches/{dispatchId} {
+      allow read: if isStaff();
+      allow create: if isStaff() && isValidDispatch(incoming());
+      allow update: if isStaff() && isValidDispatch(incoming());
+      allow delete: if isOwner();
+    }
+
+    match /returns/{returnId} {
+      allow read: if isStaff();
+      allow create: if isStaff() && isValidReturn(incoming());
+      allow update: if isStaff() && isValidReturn(incoming());
+      allow delete: if isOwner();
+    }
+
+    match /maintenance_reports/{reportId} {
+      allow read: if isStaff();
+      allow create: if isStaff() && isValidMaintenance(incoming());
+      allow update: if isStaff() && isValidMaintenance(incoming());
+      allow delete: if isOwner();
+    }
+
+    match /menus/{menuId} {
+      allow read: if isStaff();
+      allow create: if isManager() && isValidMenu(incoming());
+      allow update: if isManager() && isValidMenu(incoming());
+      allow delete: if isOwner();
+    }
+
+    match /gallery_albums/{albumId} {
+      allow read: if true; // Public access for showcase
+      allow create: if isManager() && isValidAlbum(incoming());
+      allow update: if isManager() && isValidAlbum(incoming());
+      allow delete: if isOwner();
+    }
+
+    match /gallery_media/{mediaId} {
+      allow read: if true; // Public access for portfolio photos/videos
+      allow create: if isManager() && isValidGalleryMedia(incoming());
+      allow update: if isManager() && isValidGalleryMedia(incoming());
+      allow delete: if isOwner();
+    }
+
+    match /staff/{staffId} {
+      allow read: if isStaff();
+      // Block unverified self-escalations
+      allow create: if isOwner() && isValidStaff(incoming());
+      allow update: if (isOwner() && isValidStaff(incoming())) || (isStaff() && request.auth.uid == staffId && incoming().role == existing().role && isValidStaff(incoming()));
+      allow delete: if isOwner();
+    }
+
+    match /inquiries/{inquiryId} {
+      allow read: if isStaff();
+      allow create: if isValidInquiry(incoming()); // Public inquiry submission allowed
+      allow update: if isStaff() && isValidInquiry(incoming());
+      allow delete: if isOwner();
+    }
+  }
+}

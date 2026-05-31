@@ -13,11 +13,17 @@ import { DashboardLayout } from './layouts/DashboardLayout';
 import { MobileLayout } from '../apps/mobile-staff/src/layouts/MobileLayout';
 import Home from './pages/public/Home';
 
+// Auth Imports
+import { AuthProvider } from './context/AuthContext';
+import { RequireAuth, RequireRole } from './components/RouteGuards';
+import { UserRole } from './context/AuthContext';
+
 // Lazy load public pages
 const AboutPage = lazy(() => import('./pages/public/About'));
 const ServicesPage = lazy(() => import('./pages/public/Services'));
 const GalleryPage = lazy(() => import('./pages/public/Gallery'));
 const ContactPage = lazy(() => import('./pages/public/Contact'));
+const LoginPage = lazy(() => import('./pages/public/Login'));
 
 // Lazy load admin pages
 const AdminDashboard = lazy(() => import('./pages/admin/Dashboard'));
@@ -35,8 +41,24 @@ const StaffInspection = lazy(() => import('./pages/staff/Inspection'));
 
 // Layout Boundaries
 const PublicBoundary = () => <PublicLayout><Outlet /></PublicLayout>;
-const AdminBoundary = () => <DashboardLayout><Outlet /></DashboardLayout>;
-const StaffBoundary = () => <MobileLayout><Outlet /></MobileLayout>;
+const AdminBoundary = () => (
+  <RequireAuth>
+    <RequireRole allowedRoles={[UserRole.OWNER, UserRole.MANAGER, UserRole.VIEWER]}>
+      <DashboardLayout>
+        <Outlet />
+      </DashboardLayout>
+    </RequireRole>
+  </RequireAuth>
+);
+const StaffBoundary = () => (
+  <RequireAuth>
+    <RequireRole allowedRoles={[UserRole.OWNER, UserRole.STAFF]}>
+      <MobileLayout>
+        <Outlet />
+      </MobileLayout>
+    </RequireRole>
+  </RequireAuth>
+);
 
 const LoadingFallback = () => (
   <div className="min-h-screen w-full flex items-center justify-center bg-[var(--color-slate-midnight)]">
@@ -47,43 +69,48 @@ const LoadingFallback = () => (
 export default function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<LoadingFallback />}>
-        <Routes>
-          {/* Public Website */}
-          <Route element={<PublicBoundary />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-          </Route>
+      <AuthProvider>
+        <Suspense fallback={<LoadingFallback />}>
+          <Routes>
+            {/* Public Website */}
+            <Route element={<PublicBoundary />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/gallery" element={<GalleryPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+            </Route>
 
-          {/* Admin Dashboard */}
-          <Route path="/admin" element={<AdminBoundary />}>
-            <Route index element={<AdminDashboard />} />
-            <Route path="dashboard" element={<AdminDashboard />} />
-            <Route path="bookings" element={<AdminBookings />} />
-            <Route path="inventory" element={<AdminInventory />} />
-            <Route path="dispatch" element={<AdminDispatch />} />
-            <Route path="returns" element={<AdminReturns />} />
-            <Route path="maintenance" element={<AdminMaintenance />} />
-          </Route>
+            {/* Login Route (Publicly Accessible) */}
+            <Route path="/login" element={<LoginPage />} />
 
-          {/* Staff Application */}
-          <Route path="/staff" element={<StaffBoundary />}>
-            <Route index element={<StaffHome />} />
-            <Route path="home" element={<StaffHome />} />
-            <Route path="dispatch" element={<StaffDispatch />} />
-            <Route path="returns" element={<StaffReturns />} />
-            <Route path="inspection" element={<StaffInspection />} />
-          </Route>
+            {/* Admin Dashboard */}
+            <Route path="/admin" element={<AdminBoundary />}>
+              <Route index element={<AdminDashboard />} />
+              <Route path="dashboard" element={<AdminDashboard />} />
+              <Route path="bookings" element={<AdminBookings />} />
+              <Route path="inventory" element={<AdminInventory />} />
+              <Route path="dispatch" element={<AdminDispatch />} />
+              <Route path="returns" element={<AdminReturns />} />
+              <Route path="maintenance" element={<AdminMaintenance />} />
+            </Route>
 
-          {/* Fallback */}
-          <Route path="*" element={<PublicBoundary />}>
-            <Route path="*" element={<Home />} />
-          </Route>
-        </Routes>
-      </Suspense>
+            {/* Staff Application */}
+            <Route path="/staff" element={<StaffBoundary />}>
+              <Route index element={<StaffHome />} />
+              <Route path="home" element={<StaffHome />} />
+              <Route path="dispatch" element={<StaffDispatch />} />
+              <Route path="returns" element={<StaffReturns />} />
+              <Route path="inspection" element={<StaffInspection />} />
+            </Route>
+
+            {/* Fallback */}
+            <Route path="*" element={<PublicBoundary />}>
+              <Route path="*" element={<Home />} />
+            </Route>
+          </Routes>
+        </Suspense>
+      </AuthProvider>
     </BrowserRouter>
   );
 }

@@ -6,6 +6,7 @@ import {
   eventRepo,
   customerRepo,
   galleryRepo,
+  galleryMediaRepo,
   menuRepo,
   staffRepo,
   inquiryRepo,
@@ -59,6 +60,11 @@ export const GalleryService = {
   create: (data: Parameters<typeof galleryRepo.create>[0]) => galleryRepo.create(data),
   update: (id: ID, data: Parameters<typeof galleryRepo.update>[1]) => galleryRepo.update(id, data),
   delete: (id: ID) => galleryRepo.delete(id),
+  getMediaAll: () => galleryMediaRepo.getAll(),
+  getMediaByAlbumId: async (albumId: ID) => {
+    const allMedia = await galleryMediaRepo.getAll();
+    return allMedia.filter(m => m.albumId === albumId);
+  }
 };
 
 export const MenuService = {

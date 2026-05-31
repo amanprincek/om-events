@@ -1,0 +1,652 @@
+{
+  "entities": {
+    "Customer": {
+      "title": "Customer",
+      "description": "Premium customer profiling document",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique Customer ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the customer"
+        },
+        "primaryPhone": {
+          "type": "string",
+          "description": "Primary phone number"
+        },
+        "altPhone": {
+          "type": "string",
+          "description": "Alternative contact phone number"
+        },
+        "whatsapp": {
+          "type": "string",
+          "description": "WhatsApp contact link or number"
+        },
+        "address": {
+          "type": "string",
+          "description": "Invoicing and communications address"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "primaryPhone",
+        "createdAt"
+      ]
+    },
+    "Booking": {
+      "title": "Booking",
+      "description": "Gala wedding or corporate booking contract details",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique Booking ID"
+        },
+        "customerId": {
+          "type": "string",
+          "description": "Reference Customer ID"
+        },
+        "branchId": {
+          "type": "string",
+          "description": "Logistical Branch ID"
+        },
+        "eventId": {
+          "type": "string",
+          "description": "Referenced Event details document ID"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "INQUIRY",
+            "DRAFT",
+            "ADVANCE_PAID",
+            "CONFIRMED",
+            "COMPLETED",
+            "CANCELLED"
+          ],
+          "description": "Live state of the booking"
+        },
+        "totalAmount": {
+          "type": "number",
+          "description": "Contract value in INR"
+        },
+        "advancePaid": {
+          "type": "number",
+          "description": "Advance paid in INR"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp"
+        }
+      },
+      "required": [
+        "id",
+        "customerId",
+        "branchId",
+        "eventId",
+        "status",
+        "totalAmount",
+        "advancePaid",
+        "createdAt"
+      ]
+    },
+    "Event": {
+      "title": "Event",
+      "description": "Linked Event logistics and setup timeline details",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique Event ID"
+        },
+        "bookingId": {
+          "type": "string",
+          "description": "Reference Booking ID"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "WEDDING",
+            "RECEPTION",
+            "BIRTHDAY",
+            "CORPORATE",
+            "SCHOOL",
+            "RELIGIOUS",
+            "OTHER"
+          ],
+          "description": "Category classification of the event"
+        },
+        "venueDetails": {
+          "type": "string",
+          "description": "Venue name and specifications"
+        },
+        "setupStartDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Tent erection setup starts timestamp"
+        },
+        "eventDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Main gala celebration date"
+        },
+        "teardownEndDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Teardown conclusion timestamp"
+        },
+        "guestCount": {
+          "type": "number",
+          "description": "Total expected guests"
+        },
+        "menuId": {
+          "type": "string",
+          "description": "Linked catering menu blueprint ID"
+        },
+        "assignedStaffIds": {
+          "type": "array",
+          "description": "Staff ID assignments array"
+        }
+      },
+      "required": [
+        "id",
+        "bookingId",
+        "type",
+        "venueDetails",
+        "setupStartDate",
+        "eventDate",
+        "teardownEndDate",
+        "guestCount",
+        "assignedStaffIds"
+      ]
+    },
+    "InventoryCategory": {
+      "title": "InventoryCategory",
+      "description": "Inventory categorization, e.g. Carpets, Glass Tents",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique category identifier"
+        },
+        "name": {
+          "type": "string",
+          "description": "Category display name"
+        },
+        "description": {
+          "type": "string",
+          "description": "Category detailed specifications"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "InventoryItem": {
+      "title": "InventoryItem",
+      "description": "Physical tenting or decoration stock asset document",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique inventory asset SKU"
+        },
+        "categoryId": {
+          "type": "string",
+          "description": "Parent category map"
+        },
+        "branchId": {
+          "type": "string",
+          "description": "Current holding branch location ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Asset description name"
+        },
+        "totalOwned": {
+          "type": "number",
+          "description": "Overall stock count in holding"
+        },
+        "damagedQuantity": {
+          "type": "number",
+          "description": "Currently damaged stock locked from setup"
+        },
+        "trackingMethod": {
+          "type": "string",
+          "enum": [
+            "BULK",
+            "SERIALIZED"
+          ],
+          "description": "Method to track dispatches of this SKU"
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "Asset image URL"
+        }
+      },
+      "required": [
+        "id",
+        "categoryId",
+        "branchId",
+        "name",
+        "totalOwned",
+        "damagedQuantity",
+        "trackingMethod"
+      ]
+    },
+    "DispatchRecord": {
+      "title": "DispatchRecord",
+      "description": "Logistical transit dispatch tracking sheet",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique Dispatch ID"
+        },
+        "eventId": {
+          "type": "string",
+          "description": "Target event logistics ID"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "PENDING",
+            "IN_TRANSIT",
+            "DELIVERED"
+          ],
+          "description": "Current status of the shipment"
+        },
+        "dispatchedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Exact dispatch departure timestamp"
+        },
+        "items": {
+          "type": "array",
+          "description": "Items list array with inventoryItemId and quantityDispatched properties"
+        }
+      },
+      "required": [
+        "id",
+        "eventId",
+        "status",
+        "items"
+      ]
+    },
+    "ReturnRecord": {
+      "title": "ReturnRecord",
+      "description": "Return checklist post-event with damage auditing state",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique Return Record ID"
+        },
+        "dispatchRecordId": {
+          "type": "string",
+          "description": "Linked output dispatch tracking ID"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "PENDING",
+            "PARTIALLY_RETURNED",
+            "FULLY_RETURNED",
+            "RETURNED_WITH_DAMAGE",
+            "RETURNED_WITH_LOSS",
+            "INSPECTION",
+            "CLEARED"
+          ],
+          "description": "State of reconciliation"
+        },
+        "returnedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Event teardown return arrival timestamp"
+        },
+        "items": {
+          "type": "array",
+          "description": "List array with inventoryItemId, quantityReturned, and quantityDamaged properties"
+        }
+      },
+      "required": [
+        "id",
+        "dispatchRecordId",
+        "status",
+        "items"
+      ]
+    },
+    "DamageReport": {
+      "title": "DamageReport",
+      "description": "Damage ticket detailing repairs or retirements needed",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique Damage Report Ticket ID"
+        },
+        "returnRecordId": {
+          "type": "string",
+          "description": "Referenced returned goods document ID"
+        },
+        "inventoryItemId": {
+          "type": "string",
+          "description": "Impacted SKU identifier"
+        },
+        "quantity": {
+          "type": "number",
+          "description": "Units count damaged"
+        },
+        "issueType": {
+          "type": "string",
+          "enum": [
+            "BROKEN",
+            "DAMAGED",
+            "MISSING_PARTS",
+            "CLEANING_REQUIRED",
+            "INSPECTION_REQUIRED",
+            "REPLACEMENT_REQUIRED"
+          ],
+          "description": "Classification of issue encountered"
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed notes on exact defect or location"
+        },
+        "resolution": {
+          "type": "string",
+          "enum": [
+            "REPORTED",
+            "UNDER_REVIEW",
+            "IN_REPAIR",
+            "AWAITING_PARTS",
+            "COMPLETED",
+            "RETIRED"
+          ],
+          "description": "State of corrective measures"
+        },
+        "assignedTechnician": {
+          "type": "string",
+          "description": "Staff in charge of correction or washing"
+        },
+        "reportedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Initiation timestamp"
+        }
+      },
+      "required": [
+        "id",
+        "returnRecordId",
+        "inventoryItemId",
+        "quantity",
+        "issueType",
+        "description",
+        "resolution",
+        "reportedAt"
+      ]
+    },
+    "Menu": {
+      "title": "Menu",
+      "description": "Template or custom wedding catering food items list map",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Menu identifier"
+        },
+        "name": {
+          "type": "string",
+          "description": "Descriptor of catering menu theme"
+        },
+        "isTemplate": {
+          "type": "boolean",
+          "description": "Whether this represents a recurring blueprint"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "isTemplate"
+      ]
+    },
+    "GalleryAlbum": {
+      "title": "GalleryAlbum",
+      "description": "Curated media album documenting high-end gala executions",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique Album ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Title designation of execution portfolio"
+        },
+        "eventId": {
+          "type": "string",
+          "description": "Involved Event ID"
+        },
+        "tags": {
+          "type": "array",
+          "description": "Categorical tags describing style or scale, e.g. Weddings"
+        },
+        "isFeatured": {
+          "type": "boolean",
+          "description": "Shown on landing page hero slider showcase"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Created date"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "tags",
+        "isFeatured",
+        "createdAt"
+      ]
+    },
+    "GalleryMedia": {
+      "title": "GalleryMedia",
+      "description": "Individual high-resolution drone photo or client reel highlight",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique Media item ID"
+        },
+        "albumId": {
+          "type": "string",
+          "description": "Associated Album ID"
+        },
+        "url": {
+          "type": "string",
+          "description": "Asset URL link hosting path"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "PHOTO",
+            "VIDEO"
+          ],
+          "description": "Media stream category"
+        },
+        "caption": {
+          "type": "string",
+          "description": "Descriptive subtitle explaining lighting grids or structures"
+        }
+      },
+      "required": [
+        "id",
+        "albumId",
+        "url",
+        "type"
+      ]
+    },
+    "StaffMember": {
+      "title": "StaffMember",
+      "description": "Corporate operations field team member details",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Staff ID"
+        },
+        "branchId": {
+          "type": "string",
+          "description": "Branch home index ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Full legal name"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Dialing phone contact"
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "OWNER",
+            "MANAGER",
+            "INVENTORY_STAFF",
+            "OPERATIONS_STAFF"
+          ],
+          "description": "Employment functional tier role"
+        },
+        "isActive": {
+          "type": "boolean",
+          "description": "Active deployment status"
+        }
+      },
+      "required": [
+        "id",
+        "branchId",
+        "name",
+        "phone",
+        "role",
+        "isActive"
+      ]
+    },
+    "Inquiry": {
+      "title": "Inquiry",
+      "description": "Public prospective sales client communication log",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique Inquiry ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Sender name"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Contact dialing phone"
+        },
+        "eventType": {
+          "type": "string",
+          "description": "Involved ceremony type requested"
+        },
+        "guestCount": {
+          "type": "number",
+          "description": "Prospective count of guest attendees"
+        },
+        "eventDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Intended event date target"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Special customized requirements notes"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Received date timestamp"
+        },
+        "isResolved": {
+          "type": "boolean",
+          "description": "Whether sales representative has resolved the entry"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "phone",
+        "createdAt",
+        "isResolved"
+      ]
+    }
+  },
+  "firestore": {
+    "customers": {
+      "schema": "Customer",
+      "description": "Registered and prospective customers with CRM profiles"
+    },
+    "bookings": {
+      "schema": "Booking",
+      "description": "Sovereign financial contracts for tent and banquet layouts"
+    },
+    "events": {
+      "schema": "Event",
+      "description": "Technical timelines and location maps for individual bookings"
+    },
+    "inventory_categories": {
+      "schema": "InventoryCategory",
+      "description": "Structural subcategories of the core premium assets"
+    },
+    "inventory": {
+      "schema": "InventoryItem",
+      "description": "Asset items inventory with operational counts"
+    },
+    "dispatches": {
+      "schema": "DispatchRecord",
+      "description": "In-transit and outgoing dispatch loading manifests"
+    },
+    "returns": {
+      "schema": "ReturnRecord",
+      "description": "Reconciliation return tickets and damage audits"
+    },
+    "maintenance_reports": {
+      "schema": "DamageReport",
+      "description": "Active cleaning, repairs and restoration tasks tracking logs"
+    },
+    "menus": {
+      "schema": "Menu",
+      "description": "Catering blueprints and customized dish schedules"
+    },
+    "gallery_albums": {
+      "schema": "GalleryAlbum",
+      "description": "Exquisite showcase event collection groupings for high-visibility guest portfolios"
+    },
+    "gallery_media": {
+      "schema": "GalleryMedia",
+      "description": "Photos and drone videos depicting royal setups"
+    },
+    "staff": {
+      "schema": "StaffMember",
+      "description": "Operational employee lists and RBAC settings"
+    },
+    "inquiries": {
+      "schema": "Inquiry",
+      "description": "Incoming leads and service reservation requests"
+    }
+  }
+}

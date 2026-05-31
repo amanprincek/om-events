@@ -1,6 +1,7 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
-import { LayoutDashboard, CalendarDays, Boxes, ArrowLeftRight, Users, Bell, Truck, Wrench, Undo2 } from 'lucide-react';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { LayoutDashboard, CalendarDays, Boxes, ArrowLeftRight, Users, Bell, Truck, Wrench, Undo2, LogOut } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 
 const NAV_ITEMS = [
   { group: 'Operations', items: [
@@ -20,6 +21,21 @@ const NAV_ITEMS = [
 
 export function DashboardLayout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
+  const navigate = useNavigate();
+  const { user, logout } = useAuth();
+
+  const handleLogout = async () => {
+    await logout();
+    navigate('/login', { replace: true });
+  };
+
+  const getInitials = (name: string) => {
+    return name
+      .split(' ')
+      .map((n) => n[0])
+      .join('')
+      .toUpperCase();
+  };
 
   return (
     <div className="min-h-screen flex bg-[var(--color-slate-midnight)] text-[var(--color-text-primary)] selection:bg-[var(--color-brand)]/30 selection:text-[var(--color-champagne)]">
@@ -60,13 +76,25 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
           ))}
         </nav>
 
+        {/* Dynamic User Profile info and luxury Logout action */}
         <div className="p-4 border-t border-[var(--color-border-glass)]">
-           <div className="flex items-center gap-3 px-4 py-3">
-              <div className="w-8 h-8 rounded-[var(--radius-sharp)] bg-[var(--color-brand)] flex items-center justify-center text-[var(--color-slate-midnight)] font-bold text-xs">PK</div>
-              <div className="flex flex-col">
-                 <span className="text-xs font-medium text-white tracking-wider">Pawan K.</span>
-                 <span className="text-[10px] text-[var(--color-brand)] tracking-widest uppercase">Owner</span>
+           <div className="flex items-center justify-between gap-2 px-3 py-2 border border-white/5 bg-white/2 rounded">
+              <div className="flex items-center gap-3 overflow-hidden">
+                 <div className="w-8 h-8 rounded-[var(--radius-sharp)] bg-[var(--color-brand)] flex bg-gradient-to-br from-[#C1AA7F] to-[#E5CCA0] items-center justify-center text-[var(--color-slate-midnight)] font-bold text-xs shrink-0 select-none">
+                   {user ? getInitials(user.name) : 'G'}
+                 </div>
+                 <div className="flex flex-col overflow-hidden">
+                    <span className="text-xs font-medium text-white tracking-wider truncate">{user ? user.name : 'Guest User'}</span>
+                    <span className="text-[9px] text-[var(--color-brand)] tracking-widest uppercase font-mono mt-0.5">{user ? user.role : 'VIEWER'}</span>
+                 </div>
               </div>
+              <button 
+                onClick={handleLogout}
+                title="Secure logout"
+                className="p-2 rounded hover:bg-white/5 text-stone-400 hover:text-rose-400 transition-colors shrink-0"
+              >
+                <LogOut size={15} />
+              </button>
            </div>
         </div>
       </aside>

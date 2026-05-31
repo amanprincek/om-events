@@ -1,7 +1,25 @@
 import React from 'react';
-import { LayoutDashboard, Truck, ClipboardCheck, ArrowLeftRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { LayoutDashboard, Truck, ClipboardCheck, ArrowLeftRight, LogOut } from 'lucide-react';
+import { useAuth } from '../../../../src/context/AuthContext';
 
 export function MobileLayout({ children }: { children: React.ReactNode }) {
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    await logout();
+    navigate('/login', { replace: true });
+  };
+
+  const getInitials = (name: string) => {
+    return name
+      .split(' ')
+      .map((n) => n[0])
+      .join('')
+      .toUpperCase();
+  };
+
   return (
     <div className="h-screen w-full flex flex-col bg-[var(--color-slate-midnight)] text-[var(--color-text-primary)] md:max-w-md md:mx-auto md:border-x md:border-[var(--color-border-glass)] selection:bg-[var(--color-brand)]/30 selection:text-[var(--color-champagne)]">
       {/* Mobile Safe Area Top Header */}
@@ -9,8 +27,23 @@ export function MobileLayout({ children }: { children: React.ReactNode }) {
         <span className="font-serif text-lg tracking-wider text-white">
           OM <span className="text-[var(--color-brand)]">STAFF</span>
         </span>
-        <div className="w-8 h-8 rounded-[var(--radius-sharp)] border border-[var(--color-border-glass)] flex items-center justify-center bg-[var(--color-slate-midnight)]">
-           <span className="text-[10px] text-[var(--color-text-muted)]">OP</span>
+        <div className="flex items-center gap-2">
+          {user && (
+            <div className="flex flex-col text-right">
+              <span className="text-[10px] font-semibold text-white tracking-wide truncate max-w-[80px]">{user.name}</span>
+              <span className="text-[8px] text-[var(--color-brand)] tracking-widest uppercase font-mono">{user.role}</span>
+            </div>
+          )}
+          <div className="w-8 h-8 rounded-[var(--radius-sharp)] border border-[#C1AA7F]/30 flex items-center justify-center bg-[var(--color-slate-midnight)] text-[#C1AA7F] font-bold text-xs select-none">
+             {user ? getInitials(user.name) : 'OP'}
+          </div>
+          <button 
+            onClick={handleLogout}
+            title="Sign Out"
+            className="p-2 rounded hover:bg-white/5 text-stone-400 hover:text-rose-400 transition-colors"
+          >
+            <LogOut size={16} />
+          </button>
         </div>
       </header>
 

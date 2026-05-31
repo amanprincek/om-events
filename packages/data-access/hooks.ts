@@ -26,6 +26,8 @@ export const queryKeys = {
   customer: (id: ID) => ["customers", id] as const,
   gallery: ["gallery"] as const,
   galleryAlbum: (id: ID) => ["gallery", id] as const,
+  galleryMedia: ["galleryMedia"] as const,
+  galleryAlbumMedia: (albumId: ID) => ["galleryMedia", { albumId }] as const,
   menus: ["menus"] as const,
   menu: (id: ID) => ["menus", id] as const,
   staff: ["staff"] as const,
@@ -103,6 +105,23 @@ export function useGalleryAlbums() {
     queryKey: queryKeys.gallery,
     queryFn: () => GalleryService.getAll(),
     staleTime: STALE_TIME,
+  });
+}
+
+export function useGalleryMedia() {
+  return useQuery({
+    queryKey: queryKeys.galleryMedia,
+    queryFn: () => GalleryService.getMediaAll(),
+    staleTime: STALE_TIME,
+  });
+}
+
+export function useGalleryMediaByAlbum(albumId: ID) {
+  return useQuery({
+    queryKey: queryKeys.galleryAlbumMedia(albumId),
+    queryFn: () => GalleryService.getMediaByAlbumId(albumId),
+    staleTime: STALE_TIME,
+    enabled: !!albumId,
   });
 }
 

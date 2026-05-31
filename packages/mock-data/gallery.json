@@ -2,27 +2,130 @@
   "albums": [
     {
       "id": "album_1",
-      "name": "Grand Wedding at Renusagar",
+      "name": "The Royal Rajputana Mandap",
       "eventId": "evt_1",
-      "tags": ["Wedding", "Royal", "Night"],
+      "tags": ["Weddings", "Decorations", "Lighting"],
       "isFeatured": true,
       "createdAt": "2024-03-25T10:00:00Z"
+    },
+    {
+      "id": "album_2",
+      "name": "Imperial Emerald Banquet Reception",
+      "eventId": "evt_2",
+      "tags": ["Receptions", "Catering", "Decorations"],
+      "isFeatured": true,
+      "createdAt": "2024-04-12T11:30:00Z"
+    },
+    {
+      "id": "album_3",
+      "name": "Starlight Celestial Corporate Gala",
+      "eventId": "evt_3",
+      "tags": ["Corporate Events", "Lighting", "Catering"],
+      "isFeatured": true,
+      "createdAt": "2024-05-02T14:00:00Z"
+    },
+    {
+      "id": "album_4",
+      "name": "Enchanted Pastel Woods (First Brithday)",
+      "eventId": "evt_4",
+      "tags": ["Birthdays", "Decorations"],
+      "isFeatured": false,
+      "createdAt": "2024-05-18T09:15:00Z"
+    },
+    {
+      "id": "album_5",
+      "name": "St. Xavier's Annual Golden Jubilee",
+      "eventId": "evt_5",
+      "tags": ["School Events", "Lighting", "Decorations"],
+      "isFeatured": false,
+      "createdAt": "2024-05-22T16:45:00Z"
+    },
+    {
+      "id": "album_6",
+      "name": "Exquisite Royal Catering Spread",
+      "eventId": "evt_6",
+      "tags": ["Catering", "Decorations"],
+      "isFeatured": false,
+      "createdAt": "2024-05-28T08:00:00Z"
     }
   ],
   "media": [
     {
       "id": "media_1",
       "albumId": "album_1",
-      "url": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=2000",
+      "url": "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=1200",
       "type": "PHOTO",
-      "caption": "Night setup with golden lights."
+      "caption": "The grand imperial dome structure framed by cascading marigolds and custom drapery."
     },
     {
       "id": "media_2",
       "albumId": "album_1",
-      "url": "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=800",
+      "url": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200",
       "type": "PHOTO",
-      "caption": "Luxury tent architecture."
+      "caption": "Pristine pathway with elegant crystal-laden candelabras and golden lighting accents."
+    },
+    {
+      "id": "media_3",
+      "albumId": "album_1",
+      "url": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1200",
+      "type": "PHOTO",
+      "caption": "Overhead drone perspective showcasing the central royal layout and symmetrical seating."
+    },
+    {
+      "id": "media_4",
+      "albumId": "album_2",
+      "url": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1200",
+      "type": "PHOTO",
+      "caption": "The emerald curtain backdrop featuring custom-curated LED strings and velvet sofas."
+    },
+    {
+      "id": "media_5",
+      "albumId": "album_2",
+      "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=1200",
+      "type": "PHOTO",
+      "caption": "Live tandoori and artisanal kebab counter styled in rustic copper and clay theme."
+    },
+    {
+      "id": "media_6",
+      "albumId": "album_3",
+      "url": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1200",
+      "type": "PHOTO",
+      "caption": "Futuristic stage lighting setup utilizing intelligent beam matrix spotlights."
+    },
+    {
+      "id": "media_7",
+      "albumId": "album_3",
+      "url": "https://assets.mixkit.co/videos/preview/mixkit-celebration-at-a-fancy-gala-40505-large.mp4",
+      "type": "VIDEO",
+      "caption": "Drone video tracking around the master outdoor tent structure during twilight."
+    },
+    {
+      "id": "media_8",
+      "albumId": "album_4",
+      "url": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&q=80&w=1200",
+      "type": "PHOTO",
+      "caption": "Magical pastel hot-air balloon photo arena with wooden swing sets."
+    },
+    {
+      "id": "media_9",
+      "albumId": "album_5",
+      "url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=1200",
+      "type": "PHOTO",
+      "caption": "Concert-grade overhead aluminum trussing equipped with line-array acoustics."
+    },
+    {
+      "id": "media_10",
+      "albumId": "album_6",
+      "url": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=1200",
+      "type": "PHOTO",
+      "caption": "Designer dessert island with custom ice sculptures and mini-confectionery platters."
+    },
+    {
+      "id": "media_11",
+      "albumId": "album_1",
+      "url": "https://assets.mixkit.co/videos/preview/mixkit-bride-and-groom-holding-hands-during-a-photoshoot-40292-large.mp4",
+      "type": "VIDEO",
+      "caption": "Special video walk-through demonstrating full mandap walkthrough and seating details."
     }
   ]
 }
