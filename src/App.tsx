@@ -5,6 +5,7 @@
 
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 
 import { webAdminApp } from '../apps/web-admin';
 import { mobileStaffApp } from '../apps/mobile-staff';
@@ -69,8 +70,9 @@ const LoadingFallback = () => (
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <AuthProvider>
+    <HelmetProvider>
+      <BrowserRouter>
+        <AuthProvider>
         <Suspense fallback={<LoadingFallback />}>
           <Routes>
             {/* Public Website */}
@@ -114,5 +116,6 @@ export default function App() {
         </Suspense>
       </AuthProvider>
     </BrowserRouter>
+  </HelmetProvider>
   );
 }

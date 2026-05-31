@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://om-tent-house.example.com/sitemap.xml
