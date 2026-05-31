@@ -6,6 +6,7 @@
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
+import { CookieConsent } from './components/CookieConsent';
 
 import { webAdminApp } from '../apps/web-admin';
 import { mobileStaffApp } from '../apps/mobile-staff';
@@ -74,6 +75,7 @@ export default function App() {
       <BrowserRouter>
         <AuthProvider>
         <Suspense fallback={<LoadingFallback />}>
+          <CookieConsent />
           <Routes>
             {/* Public Website */}
             <Route element={<PublicBoundary />}>

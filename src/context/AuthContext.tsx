@@ -207,20 +207,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         try {
           userCred = await signInWithEmailAndPassword(auth, email, password);
         } catch (signInError: any) {
-          // If the user hasn't been created on Firebase Auth yet (brand new project), autogenerate they exist
-          if (
-            signInError.code === 'auth/user-not-found' || 
-            signInError.code === 'auth/invalid-credential' ||
-            signInError.code === 'auth/cannot-find-user'
-          ) {
-            try {
-              userCred = await createUserWithEmailAndPassword(auth, email, password);
-            } catch (signUpError: any) {
-              throw signInError; // keep original sign-in error if sign-up also fails
-            }
-          } else {
-            throw signInError;
-          }
+          throw signInError;
         }
 
         const firebaseUser = userCred.user;

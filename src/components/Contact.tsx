@@ -1,7 +1,11 @@
 import { MapPin, Phone, MessageCircle } from 'lucide-react';
 import { Section, Container, Heading, GlassPanel, Button } from "@om-tent/ui-system";
+import { trackEvent } from '../lib/analytics';
 
 export default function Contact() {
+  const handlePhoneClick = () => trackEvent('phone_click');
+  const handleWaClick = () => trackEvent('wa_click');
+
   return (
     <Section id="contact" className="bg-[var(--color-slate-midnight)] relative">
       <Container>
@@ -20,10 +24,10 @@ export default function Contact() {
                 </GlassPanel>
                 <div>
                   <h4 className="text-overline mb-2 text-white">Direct Phone</h4>
-                  <a href="tel:+919452460040" className="block text-[var(--color-text-muted)] hover:text-[var(--color-brand)] transition-colors text-lg mb-1">
+                  <a href="tel:+919452460040" onClick={handlePhoneClick} className="block text-[var(--color-text-muted)] hover:text-[var(--color-brand)] transition-colors text-lg mb-1">
                     +91 94524 60040 (Primary)
                   </a>
-                  <a href="tel:+919653011551" className="block text-[var(--color-text-muted)] hover:text-[var(--color-brand)] transition-colors text-lg">
+                  <a href="tel:+919653011551" onClick={handlePhoneClick} className="block text-[var(--color-text-muted)] hover:text-[var(--color-brand)] transition-colors text-lg">
                     +91 96530 11551 (Alternative)
                   </a>
                 </div>
@@ -40,6 +44,7 @@ export default function Contact() {
                     href="https://wa.me/919452460040" 
                     target="_blank" 
                     rel="noreferrer"
+                    onClick={handleWaClick}
                     className="inline-flex items-center text-[var(--color-brand)] hover:text-[var(--color-champagne)] font-medium transition-colors border-b border-[var(--color-brand)] pb-1"
                   >
                     Pawan Kumar se baat karein <span>&rarr;</span>
@@ -92,7 +97,10 @@ export default function Contact() {
                   <Button 
                     variant="primary" 
                     className="w-full"
-                    onClick={() => window.open('https://wa.me/919452460040', '_blank')}
+                    onClick={() => {
+                        handleWaClick();
+                        window.open('https://wa.me/919452460040', '_blank');
+                    }}
                   >
                     WhatsApp Karein
                   </Button>

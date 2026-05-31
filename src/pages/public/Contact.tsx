@@ -2,8 +2,15 @@ import React from 'react';
 import { SEO } from '../../components/SEO';
 import { Section, Container, Heading, GlassPanel, Button, Input } from "@om-tent/ui-system";
 import { Phone, MessageCircle, MapPin } from 'lucide-react';
+import { trackEvent } from '../../lib/analytics';
 
 export default function ContactPage() {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    trackEvent('inquiry_submit');
+    alert('Thank you! We will get back to you soon.');
+  };
+
   return (
     <div className="bg-[var(--color-slate-midnight)] pt-20">
       <SEO 
@@ -22,11 +29,11 @@ export default function ContactPage() {
           
           <GlassPanel className="p-12 max-w-2xl mx-auto text-left">
             <Heading level={3} className="mb-8">Send Your Inquiry</Heading>
-            <form className="space-y-6">
-                <Input placeholder="Name" />
-                <Input placeholder="Phone Number" />
+            <form className="space-y-6" onSubmit={handleSubmit}>
+                <Input placeholder="Name" required />
+                <Input placeholder="Phone Number" required />
                 <Input placeholder="Event Type (e.g. Wedding)" />
-                <Button variant="primary" className="w-full">Submit Inquiry</Button>
+                <Button variant="primary" className="w-full" type="submit">Submit Inquiry</Button>
             </form>
           </GlassPanel>
         </Container>

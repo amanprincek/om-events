@@ -22,6 +22,7 @@ export default function Footer() {
         
         <div className="flex flex-col flex-col-reverse md:flex-row justify-between items-center text-[var(--color-text-muted)] text-sm font-light font-sans gap-4">
           <p>&copy; {new Date().getFullYear()} Om Tent House And Caterers. All rights reserved.</p>
+          <a href="/login" className="text-[var(--color-text-muted)] hover:text-[var(--color-brand)] transition-colors">Management Portal</a>
           <p className="border border-[var(--color-border-glass)] px-4 py-2 rounded-[var(--radius-pill)]">Founded 2019 • Managed by Pawan & Gopal Kumar</p>
         </div>
       </Container>
